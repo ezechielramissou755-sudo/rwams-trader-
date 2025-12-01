@@ -1,0 +1,68 @@
+═══════════════════════════════════════════════════════════════
+  🎨 COMMENT AJOUTER VOTRE LOGO RWAMS TRADERS
+═══════════════════════════════════════════════════════════════
+
+📍 Le logo apparaît à 2 endroits :
+   1️⃣  En haut à gauche dans la barre de navigation (Navbar)
+   2️⃣  En bas dans le pied de page (Footer)
+
+
+🎯 ÉTAPE 1: Préparez votre fichier logo
+────────────────────────────────────────────────────────────────
+
+Format recommandé :
+✅ PNG avec fond transparent (meilleur choix)
+✅ JPG (si votre logo a un fond coloré)
+✅ SVG (vectoriel - qualité parfaite)
+
+Taille recommandée :
+✅ 512x512 pixels minimum
+✅ Ou format carré (1:1)
+
+
+🎯 ÉTAPE 2: Copiez votre logo dans ce dossier
+────────────────────────────────────────────────────────────────
+
+📁 Emplacement : C:\Users\petit\CascadeProjects\cryptolearn-academy\public\
+
+📝 Nom du fichier : logo.png
+   (ou logo.jpg si c'est un JPG)
+
+⚠️ IMPORTANT : Le nom doit être EXACTEMENT "logo.png" ou "logo.jpg"
+
+
+🎯 ÉTAPE 3: Si votre logo est en JPG (pas PNG)
+────────────────────────────────────────────────────────────────
+
+Si vous utilisez un fichier JPG au lieu de PNG, dites-le moi 
+et je modifierai le code pour utiliser "logo.jpg" au lieu de "logo.png"
+
+
+🎯 ÉTAPE 4: Actualisez votre navigateur
+────────────────────────────────────────────────────────────────
+
+Allez sur : http://localhost:3000
+Appuyez sur : Ctrl+Shift+R (actualisation forcée)
+
+Votre logo apparaîtra :
+✅ Dans la barre de navigation (en haut)
+✅ Dans le footer (en bas)
+✅ Avec un effet glow violet/cyan au survol
+
+
+═══════════════════════════════════════════════════════════════
+  💡 BESOIN D'AIDE ?
+═══════════════════════════════════════════════════════════════
+
+Si vous n'avez pas encore de logo :
+- Créez-en un avec Canva, Photoshop, ou un autre outil
+- Ou utilisez votre logo existant
+
+Si votre logo est trop grand/petit :
+- Il sera automatiquement redimensionné à 48x48px
+- Mais utilisez au minimum 512x512px pour la meilleure qualité
+
+Si le logo ne s'affiche pas :
+- Vérifiez que le fichier s'appelle exactement "logo.png"
+- Vérifiez qu'il est bien dans le dossier "public"
+- Actualisez avec Ctrl+Shift+R

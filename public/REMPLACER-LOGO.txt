@@ -1,0 +1,41 @@
+🎨 COMMENT REMPLACER LE LOGO
+
+✅ LE TITRE DU SITE EST DÉJÀ CHANGÉ !
+   Nouveau titre: "RWAMS Traders - Simulateur de Trading"
+
+📁 POUR REMPLACER LE LOGO :
+
+1️⃣ PRÉPAREZ VOTRE LOGO
+   - Format: PNG (avec fond transparent)
+   - Taille: 192x192 px ou 512x512 px
+   - Ratio: 1:1 (carré)
+   - Nom: logo.png
+
+2️⃣ REMPLACEZ LE FICHIER
+   - Supprimez l'ancien "logo.png" dans ce dossier
+   - Copiez votre nouveau "logo.png" ici
+   - Le nom doit être EXACTEMENT: logo.png
+
+3️⃣ ACTUALISEZ LE SITE
+   - Appuyez sur Ctrl+Shift+R dans le navigateur
+   - Votre nouveau logo apparaît en haut à gauche !
+
+📍 DOSSIER ACTUEL:
+   C:\Users\petit\CascadeProjects\cryptolearn-academy\public\
+
+🔖 BONUS: AJOUTER UN FAVICON
+   - Créez votre favicon sur: https://favicon.io/
+   - Renommez en: favicon.ico
+   - Placez dans ce dossier (public/)
+   - Actualisez le navigateur
+
+📚 GUIDE COMPLET:
+   Consultez: COMMENT_CHANGER_LOGO_ET_NOM.md
+
+✨ OÙ VOIR LE LOGO:
+   - En haut à gauche de la navigation
+   - À côté de "RWAMS Traders"
+   - Effet glow violet-cyan au survol
+
+🎯 RÉSULTAT:
+   Logo visible immédiatement après actualisation !

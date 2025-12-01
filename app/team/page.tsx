@@ -1,0 +1,167 @@
+'use client';
+
+import React from 'react';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import TeamCard from '@/components/team/TeamCard';
+import { motion } from 'framer-motion';
+import { Users, Target, Rocket } from 'lucide-react';
+
+
+const teamMembers = [
+  {
+    name: 'Ezechiel Ramissou',
+    title: 'CEO & Fondateur',
+    role: 'Direction',
+    image: 'https://ui-avatars.com/api/?name=Ezechiel+Ramissou&size=400&background=8b5cf6&color=fff&bold=true',
+    description: 'Visionnaire et leader passionné, Ezechiel dirige RWAMS Traders avec une vision claire de démocratiser l\'éducation au trading.'
+  },
+  {
+    name: 'Prince Nonka',
+    title: 'COO',
+    role: 'Opérations',
+    image: 'https://ui-avatars.com/api/?name=Prince+Nonka&size=400&background=06b6d4&color=fff&bold=true',
+    description: 'Prince supervise les opérations quotidiennes et assure l\'excellence de nos services auprès de notre communauté.'
+  },
+  {
+    name: 'Samakassi Zoumana',
+    title: 'Secrétaire Général',
+    role: 'Administration',
+    image: 'https://ui-avatars.com/api/?name=Samakassi+Zoumana&size=400&background=a855f7&color=fff&bold=true',
+    description: 'Zoumana coordonne toutes les activités administratives et garantit le bon fonctionnement de l\'organisation.'
+  },
+  {
+    name: 'Trabi Ange',
+    title: 'Directeur Produit',
+    role: 'Produit',
+    image: 'https://ui-avatars.com/api/?name=Trabi+Ange&size=400&background=22d3ee&color=fff&bold=true',
+    description: 'Ange développe et améliore continuellement l\'expérience utilisateur de notre plateforme de simulation.'
+  },
+  {
+    name: 'Junior',
+    title: 'Directeur Technique',
+    role: 'Technologie',
+    image: 'https://ui-avatars.com/api/?name=Junior&size=400&background=7c3aed&color=fff&bold=true',
+    description: 'Junior dirige l\'équipe technique et architecture les solutions innovantes qui propulsent RWAMS Traders.'
+  },
+  {
+    name: 'Famien',
+    title: 'Directeur de Département',
+    role: 'Marketing',
+    image: 'https://ui-avatars.com/api/?name=Famien&size=400&background=0891b2&color=fff&bold=true',
+    description: 'Famien pilote la stratégie marketing et développe la notoriété de RWAMS Traders à l\'international.'
+  }
+];
+
+
+const values = [
+  {
+    icon: Target,
+    title: 'Notre Mission',
+    description: 'Rendre le trading accessible à tous en offrant une plateforme de simulation réaliste et éducative.'
+  },
+  {
+    icon: Rocket,
+    title: 'Notre Vision',
+    description: 'Devenir la référence mondiale en matière d\'éducation et de simulation de trading.'
+  },
+  {
+    icon: Users,
+    title: 'Nos Valeurs',
+    description: 'Innovation, excellence, intégrité et engagement envers notre communauté de traders.'
+  }
+];
+
+
+export default function Team() {
+  return (
+    <div className="bg-black font-sans antialiased text-white overflow-x-hidden">
+      {/* Background Elements */}
+      <div className="fixed inset-0 z-0">
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-violet-500/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(139,92,246,0.05),transparent_50%)]"></div>
+      </div>
+
+      <div className="relative z-10">
+        <Navbar />
+        
+        <main className="pt-32 pb-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-20"
+          >
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-violet-500/10 to-cyan-500/10 border border-violet-500/20 rounded-full px-6 py-2 mb-6">
+              <Users className="w-4 h-4 text-cyan-400" />
+              <span className="text-sm text-gray-300">L&apos;équipe derrière RWAMS</span>
+            </div>
+
+
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                Notre
+              </span>{' '}
+              <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
+                Équipe
+              </span>
+            </h1>
+            
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+              Des professionnels passionnés qui travaillent chaque jour pour vous offrir 
+              la meilleure expérience de trading simulé.
+            </p>
+          </motion.div>
+
+
+          {/* Values section */}
+          <div className="grid md:grid-cols-3 gap-8 mb-24">
+            {values.map((value, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="relative bg-gradient-to-br from-slate-900/80 to-slate-800/50 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center"
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-violet-500 to-cyan-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <value.icon className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">{value.title}</h3>
+                <p className="text-gray-400">{value.description}</p>
+              </motion.div>
+            ))}
+          </div>
+
+
+          {/* Team grid */}
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-3xl font-bold text-center mb-12"
+          >
+            <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
+              Rencontrez l&apos;équipe
+            </span>
+          </motion.h2>
+
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {teamMembers.map((member, index) => (
+              <TeamCard key={index} member={member} index={index} />
+            ))}
+          </div>
+        </div>
+      </main>
+      
+      <Footer />
+      </div>
+    </div>
+  );
+}
