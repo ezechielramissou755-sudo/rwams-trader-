@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import { Button } from '@/components/ui/button';
 import { Download, Smartphone, CheckCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -67,14 +66,14 @@ export default function DownloadSection() {
             </ul>
 
             {/* Download button */}
-            <Button
-              size="lg"
-              className="group bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 text-white border-0 px-10 py-7 text-lg rounded-2xl shadow-2xl shadow-violet-500/30 hover:shadow-violet-500/50 transition-all duration-300 hover:scale-105"
-              onClick={() => window.open('https://example.com/rwams-traders.apk', '_blank')}
+            <a
+              href="/app-release.apk"
+              download
+              className="inline-flex items-center bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 text-white border-0 px-10 py-7 text-lg rounded-2xl shadow-2xl shadow-violet-500/30 hover:shadow-violet-500/50 transition-all duration-300 hover:scale-105 group"
             >
               <Download className="w-6 h-6 mr-3" />
               Download APK
-            </Button>
+            </a>
 
             <p className="text-gray-500 text-sm mt-4">
               Version 1.0.0 • 100 MB • Android 8.0+
