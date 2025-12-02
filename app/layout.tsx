@@ -8,6 +8,11 @@ const manrope = Manrope({ subsets: ["latin"], variable: '--font-manrope' });
 export const metadata: Metadata = {
   title: "RWAMS Traders - Simulateur de Trading",
   description: "Application de simulation de trading crypto avec IA, analyses avancées et formation complète",
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
 };
 
 export default function RootLayout({

@@ -23,7 +23,7 @@ const predefinedAnswers = [
   },
   {
     keywords: ['contact', 'email', 'phone'],
-    answer: "Reach us at contact@rwams-traders.com or +225 05 46 10 09 20"
+    answer: "Reach us at contact@rwams-trader.world or +225 05 46 10 09 20"
   },
 ];
 
@@ -42,7 +42,7 @@ export default function AIChatbot() {
     
     // Find matching answer
     const lowerInput = input.toLowerCase();
-    let answer = "Thanks for your question! For more details, email contact@rwams-traders.com";
+    let answer = "Thanks for your question! For more details, email contact@rwams-trader.world";
     
     for (const qa of predefinedAnswers) {
       if (qa.keywords.some(keyword => lowerInput.includes(keyword))) {

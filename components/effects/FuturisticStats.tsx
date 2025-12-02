@@ -98,6 +98,10 @@ export default function FuturisticStats() {
     return () => clearInterval(timer);
   }, [currentIndex, currentStat.value]);
 
+  if (!isMounted) {
+    return null;
+  }
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}

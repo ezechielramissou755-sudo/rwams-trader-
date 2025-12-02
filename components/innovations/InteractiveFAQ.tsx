@@ -123,7 +123,7 @@ export default function InteractiveFAQ() {
             Didn’t find the answer you need?
           </p>
           <a
-            href="mailto:contact@rwams-traders.com"
+            href="mailto:contact@rwams-trader.world"
             className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-medium transition-colors"
           >
             Contact our support team

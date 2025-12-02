@@ -5,6 +5,7 @@ import { motion, useScroll, useSpring } from 'framer-motion';
 
 export default function ScrollProgress() {
   const [scrollPercentage, setScrollPercentage] = useState(0);
+  const [isMounted, setIsMounted] = useState(false);
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -13,10 +14,18 @@ export default function ScrollProgress() {
   });
 
   useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
     return scrollYProgress.on('change', (latest) => {
       setScrollPercentage(Math.round(latest * 100));
     });
   }, [scrollYProgress]);
+
+  if (!isMounted) {
+    return null;
+  }
 
   return (
     <>

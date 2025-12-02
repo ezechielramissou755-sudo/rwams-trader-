@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { motion } from 'framer-motion';
@@ -85,6 +85,14 @@ const sections = [
 ];
 
 export default function Privacy() {
+  const [lastUpdated, setLastUpdated] = useState('');
+
+  useEffect(() => {
+    setLastUpdated(
+      new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+    );
+  }, []);
+
   return (
     <div className="bg-black font-sans antialiased text-white overflow-x-hidden">
       {/* Background Elements */}
@@ -122,7 +130,7 @@ export default function Privacy() {
             </h1>
             
             <p className="text-xl text-gray-400">
-              Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+              Last updated: {lastUpdated || '—'}
             </p>
           </motion.div>
 
