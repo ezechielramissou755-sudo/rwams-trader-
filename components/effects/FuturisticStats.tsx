@@ -7,7 +7,7 @@ import { TrendingUp, Users, Zap, Target, Award, Globe } from 'lucide-react';
 const stats = [
   {
     icon: Users,
-    label: 'Traders Actifs',
+    label: 'Active Traders',
     value: 15432,
     suffix: '+',
     color: 'from-violet-500 to-purple-500',
@@ -15,7 +15,7 @@ const stats = [
   },
   {
     icon: TrendingUp,
-    label: 'Profit Moyen',
+    label: 'Average Profit',
     value: 87.5,
     prefix: '+',
     suffix: '%',
@@ -24,7 +24,7 @@ const stats = [
   },
   {
     icon: Zap,
-    label: 'Trades Gagnants',
+    label: 'Winning Trades',
     value: 92.3,
     suffix: '%',
     color: 'from-cyan-500 to-blue-500',
@@ -32,7 +32,7 @@ const stats = [
   },
   {
     icon: Target,
-    label: 'Précision IA',
+    label: 'AI Accuracy',
     value: 94.8,
     suffix: '%',
     color: 'from-amber-500 to-orange-500',
@@ -48,7 +48,7 @@ const stats = [
   },
   {
     icon: Globe,
-    label: 'Pays Actifs',
+    label: 'Active Countries',
     value: 127,
     suffix: '+',
     color: 'from-indigo-500 to-purple-500',

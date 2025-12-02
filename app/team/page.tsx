@@ -11,45 +11,45 @@ import { Users, Target, Rocket } from 'lucide-react';
 const teamMembers = [
   {
     name: 'Ezechiel Ramissou',
-    title: 'CEO & Fondateur',
-    role: 'Direction',
+    title: 'CEO & Founder',
+    role: 'Leadership',
     image: 'https://ui-avatars.com/api/?name=Ezechiel+Ramissou&size=400&background=8b5cf6&color=fff&bold=true',
-    description: 'Visionnaire et leader passionné, Ezechiel dirige RWAMS Traders avec une vision claire de démocratiser l\'éducation au trading.'
+    description: 'Visionary leader steering RWAMS Traders with a clear mission to democratize trading education.'
   },
   {
     name: 'Prince Nonka',
     title: 'COO',
-    role: 'Opérations',
+    role: 'Operations',
     image: 'https://ui-avatars.com/api/?name=Prince+Nonka&size=400&background=06b6d4&color=fff&bold=true',
-    description: 'Prince supervise les opérations quotidiennes et assure l\'excellence de nos services auprès de notre communauté.'
+    description: 'Prince oversees daily operations and ensures outstanding service for our community.'
   },
   {
     name: 'Samakassi Zoumana',
-    title: 'Secrétaire Général',
+    title: 'General Secretary',
     role: 'Administration',
     image: 'https://ui-avatars.com/api/?name=Samakassi+Zoumana&size=400&background=a855f7&color=fff&bold=true',
-    description: 'Zoumana coordonne toutes les activités administratives et garantit le bon fonctionnement de l\'organisation.'
+    description: 'Zoumana coordinates administrative activities and keeps the organization running smoothly.'
   },
   {
     name: 'Trabi Ange',
-    title: 'Directeur Produit',
-    role: 'Produit',
+    title: 'Product Director',
+    role: 'Product',
     image: 'https://ui-avatars.com/api/?name=Trabi+Ange&size=400&background=22d3ee&color=fff&bold=true',
-    description: 'Ange développe et améliore continuellement l\'expérience utilisateur de notre plateforme de simulation.'
+    description: 'Ange continuously designs and enhances the user experience of our simulator platform.'
   },
   {
-    name: 'Junior',
-    title: 'Directeur Technique',
-    role: 'Technologie',
-    image: 'https://ui-avatars.com/api/?name=Junior&size=400&background=7c3aed&color=fff&bold=true',
-    description: 'Junior dirige l\'équipe technique et architecture les solutions innovantes qui propulsent RWAMS Traders.'
+    name: 'Kouame Junior',
+    title: 'Technical Director',
+    role: 'Technology',
+    image: 'https://ui-avatars.com/api/?name=Kouame+Junior&size=400&background=7c3aed&color=fff&bold=true',
+    description: 'Kouame Junior leads the engineering team and architects the innovative solutions powering RWAMS Traders.'
   },
   {
-    name: 'Famien',
-    title: 'Directeur de Département',
+    name: 'Kouame Tresor',
+    title: 'Department Director',
     role: 'Marketing',
-    image: 'https://ui-avatars.com/api/?name=Famien&size=400&background=0891b2&color=fff&bold=true',
-    description: 'Famien pilote la stratégie marketing et développe la notoriété de RWAMS Traders à l\'international.'
+    image: 'https://ui-avatars.com/api/?name=Kouame+Tresor&size=400&background=0891b2&color=fff&bold=true',
+    description: 'Kouame Tresor drives marketing strategy and builds RWAMS Traders’ global brand awareness.'
   }
 ];
 
@@ -57,18 +57,18 @@ const teamMembers = [
 const values = [
   {
     icon: Target,
-    title: 'Notre Mission',
-    description: 'Rendre le trading accessible à tous en offrant une plateforme de simulation réaliste et éducative.'
+    title: 'Our Mission',
+    description: 'Make trading accessible to everyone with a realistic, educational simulation platform.'
   },
   {
     icon: Rocket,
-    title: 'Notre Vision',
-    description: 'Devenir la référence mondiale en matière d\'éducation et de simulation de trading.'
+    title: 'Our Vision',
+    description: 'Become the global benchmark for trading education and simulation.'
   },
   {
     icon: Users,
-    title: 'Nos Valeurs',
-    description: 'Innovation, excellence, intégrité et engagement envers notre communauté de traders.'
+    title: 'Our Values',
+    description: 'Innovation, excellence, integrity, and commitment to our trading community.'
   }
 ];
 
@@ -98,22 +98,21 @@ export default function Team() {
           >
             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-violet-500/10 to-cyan-500/10 border border-violet-500/20 rounded-full px-6 py-2 mb-6">
               <Users className="w-4 h-4 text-cyan-400" />
-              <span className="text-sm text-gray-300">L&apos;équipe derrière RWAMS</span>
+              <span className="text-sm text-gray-300">The team behind RWAMS</span>
             </div>
 
 
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                Notre
+                Our
               </span>{' '}
               <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
-                Équipe
+                Team
               </span>
             </h1>
             
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Des professionnels passionnés qui travaillent chaque jour pour vous offrir 
-              la meilleure expérience de trading simulé.
+              Passionate professionals working every day to deliver the best simulated trading experience.
             </p>
           </motion.div>
 
@@ -147,7 +146,7 @@ export default function Team() {
             className="text-3xl font-bold text-center mb-12"
           >
             <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
-              Rencontrez l&apos;équipe
+              Meet the team
             </span>
           </motion.h2>
 

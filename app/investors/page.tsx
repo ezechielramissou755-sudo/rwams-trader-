@@ -21,26 +21,26 @@ import {
 import { Button } from '@/components/ui/button';
 
 const metrics = [
-  { label: 'Marché Adressable (TAM)', value: '$50B', description: 'Marché mondial du trading' },
-  { label: 'Marché Ciblé (SAM)', value: '$5B', description: 'Trading simulé & éducation' },
-  { label: 'Objectif 2026', value: '$10M', description: 'Revenus annuels récurrents' },
-  { label: 'Utilisateurs cible', value: '100M+', description: 'Base utilisateurs projetée' },
+  { label: 'Total Addressable Market (TAM)', value: '$50B', description: 'Global trading market' },
+  { label: 'Serviceable Addressable Market (SAM)', value: '$5B', description: 'Simulated trading & education' },
+  { label: '2026 Target', value: '$10M', description: 'Annual recurring revenue' },
+  { label: 'Target Users', value: '100M+', description: 'Projected user base' },
 ];
 
 const roadmap = [
-  { quarter: 'Q1 2025', title: 'Lancement MVP', status: 'in-progress', items: ['Version 1.0.0', 'Lancement mondial', '1K utilisateurs'] },
-  { quarter: 'Q2 2025', title: 'Expansion', status: 'planned', items: ['10+ pays', '50K utilisateurs', 'Partenariats brokers'] },
-  { quarter: 'Q3 2025', title: 'Scaling', status: 'planned', items: ['IA avancée', '500K utilisateurs', '$500K MRR'] },
-  { quarter: 'Q4 2025', title: 'International', status: 'planned', items: ['100+ pays', '5M utilisateurs', '$5M MRR'] },
+  { quarter: 'Q1 2025', title: 'MVP Launch', status: 'in-progress', items: ['Version 1.0.0', 'Global rollout', '1K users'] },
+  { quarter: 'Q2 2025', title: 'Expansion', status: 'planned', items: ['10+ countries', '50K users', 'Broker partnerships'] },
+  { quarter: 'Q3 2025', title: 'Scaling', status: 'planned', items: ['Advanced AI', '500K users', '$500K MRR'] },
+  { quarter: 'Q4 2025', title: 'International', status: 'planned', items: ['100+ countries', '5M users', '$5M MRR'] },
 ];
 
 const advantages = [
-  { icon: Target, title: 'First Mover Advantage', description: 'Plateforme de trading simulé avec IA la plus avancée' },
-  { icon: DollarSign, title: 'Modèle Récurrent', description: '$14.99/mois par utilisateur = revenus prévisibles' },
-  { icon: Users, title: 'Marché Massif', description: '500M+ traders potentiels dans le monde' },
-  { icon: Shield, title: 'Barrières à l\'entrée', description: 'Technologie IA propriétaire + dataset unique' },
-  { icon: Globe, title: 'Scalabilité', description: 'Coûts marginaux proches de zéro' },
-  { icon: Rocket, title: 'Traction Early', description: 'Stratégie go-to-market validée' },
+  { icon: Target, title: 'First-Mover Advantage', description: 'Most advanced AI-driven trading simulator' },
+  { icon: DollarSign, title: 'Recurring Model', description: '$14.99/month per user = predictable revenue' },
+  { icon: Users, title: 'Massive Market', description: '500M+ potential traders worldwide' },
+  { icon: Shield, title: 'Strong Moat', description: 'Proprietary AI technology and unique dataset' },
+  { icon: Globe, title: 'Scalable', description: 'Near-zero marginal costs' },
+  { icon: Rocket, title: 'Early Traction', description: 'Validated go-to-market strategy' },
 ];
 
 const revenueCalculator = [
@@ -76,32 +76,31 @@ export default function Investors() {
             >
               <div className="inline-flex items-center gap-2 bg-gradient-to-r from-violet-500/10 to-cyan-500/10 border border-violet-500/20 rounded-full px-6 py-2 mb-6">
                 <Rocket className="w-4 h-4 text-cyan-400" />
-                <span className="text-sm text-gray-300">Opportunité d&apos;investissement</span>
+                <span className="text-sm text-gray-300">Investment opportunity</span>
               </div>
 
               <h1 className="text-5xl md:text-7xl font-bold mb-6">
                 <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                  Investissez dans
+                  Invest in
                 </span>
                 <br />
                 <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
-                  l&apos;Avenir du Trading
+                  the Future of Trading
                 </span>
               </h1>
               
               <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-10">
-                RWAMS Traders révolutionne l&apos;éducation au trading avec l&apos;IA. 
-                Rejoignez-nous dans notre mission de démocratiser le trading pour 100M+ personnes.
+                RWAMS Traders is reinventing trading education with AI. Join our mission to democratize trading for 100M+ people.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button className="bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 text-white border-0 px-8 py-6 text-lg rounded-2xl">
                   <Mail className="w-5 h-5 mr-2" />
-                  Contactez-nous
+                  Contact us
                 </Button>
                 <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-lg rounded-2xl">
                   <Download className="w-5 h-5 mr-2" />
-                  Télécharger Pitch Deck
+                  Download pitch deck
                 </Button>
               </div>
             </motion.div>
@@ -140,7 +139,7 @@ export default function Investors() {
             >
               <h2 className="text-4xl font-bold text-center mb-12">
                 <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                  Le Problème & Notre Solution
+                  The Problem & Our Solution
                 </span>
               </h2>
 
@@ -149,23 +148,23 @@ export default function Investors() {
                   <div className="w-16 h-16 bg-red-500 rounded-2xl flex items-center justify-center mb-6">
                     <span className="text-3xl">❌</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-4">Le Problème</h3>
+                  <h3 className="text-2xl font-bold text-white mb-4">The Problem</h3>
                   <ul className="space-y-3 text-gray-300">
                     <li className="flex items-start gap-2">
                       <span className="text-red-400 mt-1">•</span>
-                      <span>95% des traders débutants perdent leur argent</span>
+                      <span>95% of beginner traders lose money</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-400 mt-1">•</span>
-                      <span>Formation coûteuse et inaccessible ($1000+)</span>
+                      <span>Training is expensive and inaccessible ($1000+)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-400 mt-1">•</span>
-                      <span>Manque d&apos;outils IA pour débutants</span>
+                      <span>Lack of AI tools for beginners</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-400 mt-1">•</span>
-                      <span>Peur de perdre de l&apos;argent réel</span>
+                      <span>Fear of losing real money</span>
                     </li>
                   </ul>
                 </div>
@@ -174,23 +173,23 @@ export default function Investors() {
                   <div className="w-16 h-16 bg-emerald-500 rounded-2xl flex items-center justify-center mb-6">
                     <span className="text-3xl">✅</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-4">Notre Solution</h3>
+                  <h3 className="text-2xl font-bold text-white mb-4">Our Solution</h3>
                   <ul className="space-y-3 text-gray-300">
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" />
-                      <span>Simulation 100% sans risque avec capital virtuel</span>
+                      <span>100% risk-free simulation with virtual capital</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" />
-                      <span>Abonnement accessible : seulement $14.99/mois</span>
+                      <span>Affordable subscription: only $14.99/month</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" />
-                      <span>9 outils IA avancés pour apprendre rapidement</span>
+                      <span>9 advanced AI tools to accelerate learning</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" />
-                      <span>Apprendre sans peur, maîtriser avec confiance</span>
+                      <span>Learn without fear, master with confidence</span>
                     </li>
                   </ul>
                 </div>
@@ -206,10 +205,10 @@ export default function Investors() {
             >
               <h2 className="text-4xl font-bold text-center mb-4">
                 <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                  Potentiel de Revenus
+                  Revenue Potential
                 </span>
               </h2>
-              <p className="text-gray-400 text-center mb-12">Modèle d&apos;abonnement récurrent à $14.99/mois</p>
+              <p className="text-gray-400 text-center mb-12">Recurring subscription model at $14.99/month</p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {revenueCalculator.map((tier, index) => (
@@ -222,11 +221,11 @@ export default function Investors() {
                     className="bg-gradient-to-br from-violet-500/10 to-cyan-500/10 border border-violet-500/20 rounded-2xl p-6 hover:border-violet-500/50 transition-all"
                   >
                     <div className="text-3xl font-bold text-white mb-2">{tier.users}</div>
-                    <div className="text-sm text-gray-400 mb-4">utilisateurs</div>
+                    <div className="text-sm text-gray-400 mb-4">users</div>
                     <div className="border-t border-white/10 pt-4">
-                      <div className="text-sm text-gray-400">Revenus mensuels</div>
+                      <div className="text-sm text-gray-400">Monthly revenue</div>
                       <div className="text-2xl font-bold text-cyan-400">{tier.monthly}</div>
-                      <div className="text-sm text-gray-400 mt-3">Revenus annuels</div>
+                      <div className="text-sm text-gray-400 mt-3">Annual revenue</div>
                       <div className="text-xl font-bold text-violet-400">{tier.yearly}</div>
                     </div>
                   </motion.div>
@@ -259,7 +258,7 @@ export default function Investors() {
                   >
                     <div className={`bg-slate-900/50 backdrop-blur-sm border ${phase.status === 'in-progress' ? 'border-emerald-500/50' : 'border-white/10'} rounded-2xl p-6`}>
                       <div className={`inline-block px-3 py-1 rounded-full text-xs font-semibold mb-4 ${phase.status === 'in-progress' ? 'bg-emerald-500/20 text-emerald-400' : 'bg-gray-500/20 text-gray-400'}`}>
-                        {phase.status === 'in-progress' ? '🔄 En cours' : '📍 Planifié'}
+                        {phase.status === 'in-progress' ? '🔄 In progress' : '📍 Planned'}
                       </div>
                       <div className="text-sm text-cyan-400 mb-2">{phase.quarter}</div>
                       <h3 className="text-xl font-bold text-white mb-4">{phase.title}</h3>
@@ -286,7 +285,7 @@ export default function Investors() {
             >
               <h2 className="text-4xl font-bold text-center mb-12">
                 <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                  Avantages Compétitifs
+                  Competitive Advantages
                 </span>
               </h2>
 
@@ -320,11 +319,11 @@ export default function Investors() {
               <Award className="w-16 h-16 text-cyan-400 mx-auto mb-6" />
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                  Prêt à Investir dans RWAMS Traders ?
+                  Ready to invest in RWAMS Traders?
                 </span>
               </h2>
               <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-                Rejoignez-nous pour révolutionner l&apos;éducation au trading en Afrique et dans le monde.
+                Join us in revolutionizing trading education in Africa and beyond.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button className="bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 text-white border-0 px-10 py-6 text-lg rounded-2xl">
@@ -332,7 +331,7 @@ export default function Investors() {
                   contact@rwams-traders.com
                 </Button>
                 <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-10 py-6 text-lg rounded-2xl">
-                  +225 05 02 25 04 73
+                  +225 05 46 10 09 20
                 </Button>
               </div>
             </motion.div>

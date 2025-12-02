@@ -4,14 +4,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Shield, Award, TrendingUp, Users } from 'lucide-react';
 
-const badges = [
-  { icon: Shield, label: 'Sécurisé', description: 'Données cryptées' },
-  { icon: Award, label: 'Investor-Ready', description: 'Startup certifiée' },
-  { icon: TrendingUp, label: 'En croissance', description: 'Scaling rapide' },
-  { icon: Users, label: '100M+ Objectif', description: 'Vision mondiale' },
-];
-
 export default function TrustBadges() {
+  const badges = [
+    { icon: Shield, label: 'Secured', description: 'Encrypted data' },
+    { icon: Award, label: 'Investor-Ready', description: 'Certified startup' },
+    { icon: TrendingUp, label: 'Fast growth', description: 'Rapid scaling' },
+    { icon: Users, label: '100M+ Goal', description: 'Global vision' },
+  ];
+
   return (
     <section className="relative py-16 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

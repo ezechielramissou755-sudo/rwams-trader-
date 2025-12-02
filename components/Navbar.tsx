@@ -16,12 +16,12 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: 'Accueil', href: '/' },
-    { name: 'Captures', href: '/screenshots' },
-    { name: 'Investisseurs', href: '/investors' },
-    { name: 'Tarifs', href: '/pricing' },
-    { name: 'Équipe', href: '/team' },
-    { name: 'Confidentialité', href: '/privacy' },
+    { name: 'Home', href: '/' },
+    { name: 'Screenshots', href: '/screenshots' },
+    { name: 'Investors', href: '/investors' },
+    { name: 'Pricing', href: '/pricing' },
+    { name: 'Team', href: '/team' },
+    { name: 'Privacy', href: '/privacy' },
   ];
 
   return (
@@ -67,7 +67,7 @@ export default function Navbar() {
               className="bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 text-white border-0 rounded-full transition-all duration-300 hover:scale-105 shadow-lg shadow-violet-500/30"
               onClick={() => window.location.href = '#download'}
             >
-              Télécharger
+              Download
             </Button>
           </div>
 
@@ -103,7 +103,7 @@ export default function Navbar() {
                 window.location.href = '#download';
               }}
             >
-              Télécharger
+              Download
             </Button>
           </div>
         </div>

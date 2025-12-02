@@ -6,11 +6,11 @@ import { Download, Smartphone, CheckCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const benefits = [
-  'Installation rapide et facile',
-  'Compatible Android 8.0+',
-  'Mises à jour automatiques',
-  'Support technique 24/7',
-  'Données cryptées et sécurisées'
+  'Fast and simple installation',
+  'Android 8.0+ compatible',
+  'Automatic updates',
+  '24/7 technical support',
+  'Encrypted & secured data'
 ];
 
 export default function DownloadSection() {
@@ -30,12 +30,12 @@ export default function DownloadSection() {
           >
             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-violet-500/10 to-cyan-500/10 border border-violet-500/20 rounded-full px-4 py-2 mb-6">
               <Smartphone className="w-4 h-4 text-cyan-400" />
-              <span className="text-sm text-gray-300">Application Android</span>
+              <span className="text-sm text-gray-300">Android app</span>
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                Téléchargez
+                Download
               </span>
               <br />
               <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
@@ -44,8 +44,7 @@ export default function DownloadSection() {
             </h2>
 
             <p className="text-xl text-gray-400 mb-8 leading-relaxed">
-              Obtenez l&apos;application maintenant et commencez votre parcours 
-              vers la maîtrise du trading. 100% gratuit, zéro risque.
+              Get the app today and start mastering trading. 100% free, zero risk.
             </p>
 
             {/* Benefits */}
@@ -74,7 +73,7 @@ export default function DownloadSection() {
               onClick={() => window.open('https://example.com/rwams-traders.apk', '_blank')}
             >
               <Download className="w-6 h-6 mr-3" />
-              Télécharger l&apos;APK
+              Download APK
             </Button>
 
             <p className="text-gray-500 text-sm mt-4">

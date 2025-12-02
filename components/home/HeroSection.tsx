@@ -7,7 +7,14 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import AIAnalytics from './AIAnalytics';
 
+const stats = [
+  { value: '0', label: 'Users', goal: 'Goal: 100M+' },
+  { value: '0', label: 'Simulated trades', goal: 'Goal: 10M+' },
+  { value: '🚀', label: 'Launching soon', goal: '' },
+];
+
 export default function HeroSection() {
+
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
       {/* Animated rings */}
@@ -47,7 +54,7 @@ export default function HeroSection() {
             className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8"
           >
             <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
-              Maîtrisez le{' '}
+              Master
             </span>
             <span className="bg-gradient-to-r from-violet-400 via-cyan-400 to-violet-400 bg-clip-text text-transparent animate-gradient">
               Trading
@@ -61,8 +68,7 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed"
           >
-            Simulateur de trading professionnel. Apprenez, pratiquez et perfectionnez 
-            vos stratégies sans risquer votre capital réel.
+            Professional crypto-trading simulator. Learn, practice, and perfect your strategies without exposing real capital.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -79,7 +85,7 @@ export default function HeroSection() {
               onClick={() => window.open('https://example.com/rwams-traders.apk', '_blank')}
             >
               <Download className="w-5 h-5 mr-2" />
-              Télécharger l&apos;APK
+              Download APK
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
             
@@ -89,7 +95,7 @@ export default function HeroSection() {
               className="border-white/20 bg-white/5 text-white hover:bg-white/10 px-8 py-6 text-lg rounded-full backdrop-blur-sm"
             >
               <Play className="w-5 h-5 mr-2" />
-              Voir la démo
+              Watch demo
             </Button>
           </motion.div>
 
@@ -104,7 +110,7 @@ export default function HeroSection() {
               <div className="inline-flex items-center gap-3 bg-gradient-to-r from-emerald-500/20 to-cyan-500/20 border border-emerald-500/30 rounded-full px-6 py-3 hover:border-emerald-500/50 transition-all cursor-pointer group">
                 <TrendingUp className="w-5 h-5 text-emerald-400 group-hover:scale-110 transition-transform" />
                 <span className="text-sm font-semibold text-emerald-400">Investor-Ready</span>
-                <span className="text-xs text-gray-400">→ Voir notre potentiel</span>
+                <span className="text-xs text-gray-400">→ Discover our potential</span>
               </div>
             </Link>
           </motion.div>
@@ -116,11 +122,7 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.8 }}
             className="grid grid-cols-3 gap-8 max-w-2xl mx-auto mt-20"
           >
-            {[
-              { value: '0', label: 'Utilisateurs', goal: 'Objectif: 100M+' },
-              { value: '0', label: 'Trades simulés', goal: 'Objectif: 10M+' },
-              { value: '🚀', label: 'Lancement bientôt', goal: '' },
-            ].map((stat, i) => (
+            {stats.map((stat, i) => (
               <div key={i} className="text-center">
                 <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
                   {stat.value}

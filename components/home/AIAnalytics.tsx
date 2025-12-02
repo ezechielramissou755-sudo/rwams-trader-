@@ -7,33 +7,33 @@ import { Brain, TrendingUp, Zap, Target, Eye, Cpu } from 'lucide-react';
 const aiMetrics = [
   {
     icon: Brain,
-    title: 'IA Neural Network',
+    title: 'Neural Network',
     value: 94.8,
     suffix: '%',
-    label: 'Précision',
+    label: 'Accuracy',
     color: 'from-violet-500 via-purple-500 to-fuchsia-500',
     particles: 12,
-    description: 'Deep Learning Analysis',
+    description: 'Deep learning analysis',
   },
   {
     icon: Target,
     title: 'Smart Predictions',
     value: 87.3,
     suffix: '%',
-    label: 'Fiabilité',
+    label: 'Reliability',
     color: 'from-cyan-500 via-blue-500 to-indigo-500',
     particles: 10,
-    description: 'Algorithmes Prédictifs',
+    description: 'Predictive algorithms',
   },
   {
     icon: Zap,
     title: 'Real-Time Processing',
     value: 1.2,
     suffix: 'ms',
-    label: 'Latence',
+    label: 'Latency',
     color: 'from-amber-500 via-orange-500 to-red-500',
     particles: 15,
-    description: 'Vitesse Ultra-Rapide',
+    description: 'Ultra-fast response',
   },
 ];
 
@@ -92,15 +92,15 @@ export default function AIAnalytics() {
       >
         <div className="inline-flex items-center gap-2 bg-gradient-to-r from-violet-500/10 to-cyan-500/10 border border-violet-500/20 rounded-full px-6 py-2 mb-6">
           <Cpu className="w-5 h-5 text-violet-400" />
-          <span className="text-sm font-medium text-gray-300">Intelligence Artificielle Avancée</span>
+          <span className="text-sm font-medium text-gray-300">Advanced Artificial Intelligence</span>
         </div>
         <h2 className="text-4xl md:text-5xl font-bold">
           <span className="bg-gradient-to-r from-violet-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
-            Propulsé par l&apos;IA
+            Powered by AI
           </span>
         </h2>
         <p className="text-gray-400 mt-4 text-lg">
-          Technologie de pointe pour des analyses ultra-précises
+          Cutting-edge technology delivering ultra-precise insights
         </p>
       </motion.div>
 

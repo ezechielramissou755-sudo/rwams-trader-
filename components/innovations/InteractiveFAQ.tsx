@@ -6,36 +6,36 @@ import { ChevronDown, HelpCircle } from 'lucide-react';
 
 const faqs = [
   {
-    question: "RWAMS Traders est-il vraiment sans risque ?",
-    answer: "Oui, absolument ! Vous tradez avec de l'argent virtuel. Aucun risque pour votre capital réel. C'est parfait pour apprendre et pratiquer."
+    question: "Is RWAMS Traders really risk-free?",
+    answer: "Absolutely. You trade with virtual money only—no risk for your real capital. Perfect for learning and practicing."
   },
   {
-    question: "Combien coûte l'abonnement ?",
-    answer: "Seulement $14.99/mois avec accès illimité à tous les 9 outils IA, formation gratuite, et support 24/7. Aucun frais caché !"
+    question: "How much does the subscription cost?",
+    answer: "$14.99/month with unlimited access to all 9 AI tools, included training, and 24/7 support. No hidden fees."
   },
   {
-    question: "Les outils IA fonctionnent-ils vraiment ?",
-    answer: "Nos outils IA sont alimentés par des algorithmes avancés d'apprentissage automatique. Ils analysent des millions de données en temps réel pour générer des signaux précis."
+    question: "Do the AI tools actually work?",
+    answer: "Our AI stack relies on advanced machine-learning models analyzing millions of data points in real time to deliver precise signals."
   },
   {
-    question: "Puis-je utiliser RWAMS sur mobile ?",
-    answer: "Oui ! Notre application Android (100 MB) est disponible en téléchargement. Version iOS en développement."
+    question: "Can I use RWAMS on mobile?",
+    answer: "Yes. Our Android app (100 MB) is ready to download today. iOS version is coming soon."
   },
   {
-    question: "Y a-t-il une garantie de remboursement ?",
-    answer: "Oui, satisfaction garantie 30 jours. Si vous n'êtes pas satisfait, nous vous remboursons intégralement, sans question."
+    question: "Is there a refund guarantee?",
+    answer: "Yes, 30-day money-back guarantee. If you’re not satisfied, we refund you—no questions asked."
   },
   {
-    question: "Combien de temps faut-il pour apprendre ?",
-    answer: "La plupart de nos utilisateurs maîtrisent les bases en 2-3 semaines. Avec nos outils IA, vous progressez 10x plus vite qu'avec les méthodes traditionnelles."
+    question: "How long does it take to learn?",
+    answer: "Most users master the basics within 2–3 weeks. With our AI tools you progress 10x faster than with traditional methods."
   },
   {
-    question: "RWAMS est-il adapté aux débutants ?",
-    answer: "Absolument ! Notre IA personnalisée s'adapte à votre niveau. Que vous soyez débutant ou expert, vous avez un parcours sur mesure."
+    question: "Is RWAMS good for beginners?",
+    answer: "Definitely. Our personalized AI adapts to your level. Beginner or pro, you get a tailored journey."
   },
   {
-    question: "Puis-je annuler mon abonnement à tout moment ?",
-    answer: "Oui, vous pouvez annuler à tout moment en un clic. Aucun engagement à long terme, aucune pénalité."
+    question: "Can I cancel anytime?",
+    answer: "Yes, cancel in one click whenever you want. No long-term commitment, no penalties."
   }
 ];
 
@@ -53,16 +53,16 @@ export default function InteractiveFAQ() {
         >
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-violet-500/10 to-cyan-500/10 border border-violet-500/20 rounded-full px-6 py-2 mb-6">
             <HelpCircle className="w-4 h-4 text-cyan-400" />
-            <span className="text-sm text-gray-300">Questions fréquentes</span>
+            <span className="text-sm text-gray-300">Frequently asked questions</span>
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-              Vous avez des
+              Got
             </span>
             <br />
             <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
-              Questions ?
+              Questions?
             </span>
           </h2>
         </motion.div>
@@ -120,13 +120,13 @@ export default function InteractiveFAQ() {
           className="text-center mt-12"
         >
           <p className="text-gray-400 mb-4">
-            Vous ne trouvez pas la réponse à votre question ?
+            Didn’t find the answer you need?
           </p>
           <a
             href="mailto:contact@rwams-traders.com"
             className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-medium transition-colors"
           >
-            Contactez notre support
+            Contact our support team
             <span>→</span>
           </a>
         </motion.div>

@@ -17,56 +17,56 @@ import { motion } from 'framer-motion';
 const features = [
   {
     icon: Brain,
-    title: 'AI Signals - Signaux de trading IA',
-    description: 'Génération automatique de signaux BUY/SELL/WAIT avec score de confiance 0-100% et analyse technique RSI, MACD, volume.',
+    title: 'AI Signals',
+    description: 'Automatic BUY/SELL/WAIT alerts with 0-100% confidence score plus RSI, MACD and volume insights.',
     gradient: 'from-violet-500 to-purple-500'
   },
   {
     icon: Target,
-    title: 'Personalized AI - IA personnalisée',
-    description: 'Assistant IA adapté à votre profil de trader avec recommandations personnalisées et analyse de votre style.',
+    title: 'Personalized AI',
+    description: 'Assistant tailored to your trader profile with adaptive recommendations and style analysis.',
     gradient: 'from-cyan-500 to-blue-500'
   },
   {
     icon: TrendingUp,
-    title: 'AI Backtesting - Test de stratégies',
-    description: 'Backtesting automatique de vos stratégies avec analyse de performance historique et optimisation de paramètres.',
+    title: 'AI Backtesting',
+    description: 'Run historical performance tests and parameter optimization on every strategy in minutes.',
     gradient: 'from-pink-500 to-rose-500'
   },
   {
     icon: Shield,
-    title: 'Stress Test - Test de résistance',
-    description: 'Simulation de scénarios extrêmes et test de votre portefeuille en conditions de crise avec analyse de risque complète.',
+    title: 'Stress Testing',
+    description: 'Simulate extreme market scenarios and evaluate portfolio resilience with full risk analytics.',
     gradient: 'from-amber-500 to-orange-500'
   },
   {
     icon: Heart,
-    title: 'Sentiment Analysis - Analyse de sentiment',
-    description: 'Analyse du sentiment du marché en temps réel avec détection de tendances sociales et score positif/négatif.',
+    title: 'Sentiment Analysis',
+    description: 'Real-time market sentiment feed powered by social signals and positive/negative scoring.',
     gradient: 'from-emerald-500 to-green-500'
   },
   {
     icon: GitCompare,
-    title: 'What-If Analysis - Scénarios',
-    description: 'Simulation "Et si..." pour prédire l\'impact de changements et tester différents scénarios de trading.',
+    title: 'What-If Simulator',
+    description: 'Experiment with “what if” scenarios to predict impact and validate multiple trading paths.',
     gradient: 'from-indigo-500 to-violet-500'
   },
   {
     icon: Mic,
-    title: 'Voice Trading - Trading vocal',
-    description: 'Commandes vocales pour trader: "Acheter 0.5 BTC", "Vendre tout mon ETH". Trading mains libres avec IA.',
+    title: 'Voice Trading',
+    description: 'Hands-free commands such as “Buy 0.5 BTC” or “Sell all my ETH” executed by the AI assistant.',
     gradient: 'from-red-500 to-pink-500'
   },
   {
     icon: Network,
-    title: 'Correlation Analysis - Corrélations',
-    description: 'Analyse de corrélation entre actifs, détection de patterns de mouvements similaires et optimisation de portefeuille.',
+    title: 'Correlation Radar',
+    description: 'Spot asset correlations, similar movement patterns, and balance your portfolio instantly.',
     gradient: 'from-teal-500 to-cyan-500'
   },
   {
     icon: Database,
-    title: 'Dark Pool Simulator - Simulation dark pool',
-    description: 'Simulation de trading dark pool avec analyse de liquidité cachée et détection d\'ordres massifs institutionnels.',
+    title: 'Dark Pool Simulator',
+    description: 'Model institutional-scale orders, hidden liquidity, and dark pool flows before going live.',
     gradient: 'from-slate-600 to-gray-700'
   }
 ];
@@ -85,15 +85,14 @@ export default function FeaturesSection() {
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-              Outils IA{' '}
+              Advanced{' '}
             </span>
             <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
-              Avancés
+              AI Toolkit
             </span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Accédez à 9 outils d'intelligence artificielle puissants pour analyser, 
-            prédire et optimiser vos stratégies de trading.
+            Access nine powerful AI capabilities to analyze, predict, and optimize every single trading decision.
           </p>
         </motion.div>
 

@@ -27,8 +27,7 @@ export default function Footer() {
               <span className="text-xl font-bold text-white">RWAMS Traders</span>
             </div>
             <p className="text-gray-400 max-w-md leading-relaxed">
-              La plateforme de simulation de trading la plus avancée. 
-              Apprenez, pratiquez et maîtrisez le trading sans risquer votre capital.
+              The most advanced trading simulation platform. Learn, practice, and master trading without risking capital.
             </p>
           </div>
 
@@ -38,32 +37,32 @@ export default function Footer() {
             <ul className="space-y-4">
               <li>
                 <Link href="/" className="text-gray-400 hover:text-cyan-400 transition-colors">
-                  Accueil
+                  Home
                 </Link>
               </li>
               <li>
                 <Link href="/screenshots" className="text-gray-400 hover:text-cyan-400 transition-colors">
-                  Captures
+                  Screenshots
                 </Link>
               </li>
               <li>
                 <Link href="/investors" className="text-gray-400 hover:text-cyan-400 transition-colors">
-                  Investisseurs
+                  Investors
                 </Link>
               </li>
               <li>
                 <Link href="/pricing" className="text-gray-400 hover:text-cyan-400 transition-colors">
-                  Tarifs
+                  Pricing
                 </Link>
               </li>
               <li>
                 <Link href="/team" className="text-gray-400 hover:text-cyan-400 transition-colors">
-                  Notre Équipe
+                  Our Team
                 </Link>
               </li>
               <li>
                 <Link href="/privacy" className="text-gray-400 hover:text-cyan-400 transition-colors">
-                  Confidentialité
+                  Privacy
                 </Link>
               </li>
             </ul>
@@ -79,11 +78,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3 text-gray-400">
                 <Phone className="w-5 h-5 text-cyan-500" />
-                +225 05 02 25 04 73
+                +225 05 46 10 09 20
               </li>
               <li className="flex items-center gap-3 text-gray-400">
                 <MapPin className="w-5 h-5 text-cyan-500" />
-                Présence mondiale
+                Global presence
               </li>
             </ul>
           </div>
@@ -91,10 +90,10 @@ export default function Footer() {
 
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm">
-            © 2024 RWAMS Traders. Tous droits réservés.
+            © 2025 RWAMS Traders. All rights reserved.
           </p>
           <Link href="/privacy" className="text-gray-500 hover:text-cyan-400 text-sm transition-colors">
-            Politique de confidentialité
+            Privacy Policy
           </Link>
         </div>
       </div>

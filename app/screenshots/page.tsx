@@ -8,57 +8,57 @@ import { Smartphone, TrendingUp, Award, BarChart3, Zap, Bell, Layout, Target, Tr
 
 const screenshots = [
   {
-    title: 'Dashboard Principal',
-    description: 'Vue d\'ensemble de votre portefeuille',
+    title: 'Main Dashboard',
+    description: 'Full overview of your portfolio',
     icon: TrendingUp,
     image: '/screenshots/dashboard.jpg',
     gradient: 'from-violet-500 to-purple-500',
   },
   {
-    title: 'Trading en Temps Réel',
-    description: 'Passez vos ordres instantanément',
+    title: 'Real-Time Trading',
+    description: 'Execute orders instantly',
     icon: Zap,
     image: '/screenshots/trading.jpg',
     gradient: 'from-cyan-500 to-blue-500',
   },
   {
-    title: 'Analyses IA',
-    description: 'Signaux et prédictions intelligentes',
+    title: 'AI Analysis',
+    description: 'Smart signals and predictions',
     icon: BarChart3,
     image: '/screenshots/ai-analysis.jpg',
     gradient: 'from-purple-500 to-pink-500',
   },
   {
-    title: 'Performances',
-    description: 'Suivez vos résultats en détail',
+    title: 'Performance',
+    description: 'Track your detailed results',
     icon: Award,
     image: '/screenshots/performance.jpg',
     gradient: 'from-emerald-500 to-teal-500',
   },
   {
-    title: 'Alertes Personnalisées',
-    description: 'Notifications intelligentes sur mesure',
+    title: 'Custom Alerts',
+    description: 'Smart notifications tailored to you',
     icon: Bell,
     image: '/screenshots/alerts.jpg',
     gradient: 'from-orange-500 to-red-500',
   },
   {
-    title: 'Overlays Customisés',
-    description: 'Créez vos indicateurs visuels',
+    title: 'Custom Overlays',
+    description: 'Create your own visual indicators',
     icon: Layout,
     image: '/screenshots/overlays.jpg',
     gradient: 'from-indigo-500 to-purple-500',
   },
   {
-    title: 'Carte de Progression',
-    description: 'Visualisez votre évolution',
+    title: 'Progress Map',
+    description: 'Visualize your growth',
     icon: TrendingIcon,
     image: '/screenshots/progression.jpg',
     gradient: 'from-pink-500 to-rose-500',
   },
   {
-    title: 'Stratégies Avancées',
-    description: 'Backtesting et optimisation',
+    title: 'Advanced Strategies',
+    description: 'Backtesting and optimization',
     icon: Target,
     image: '/screenshots/strategies.jpg',
     gradient: 'from-amber-500 to-yellow-500',
@@ -91,12 +91,12 @@ export default function Screenshots() {
             >
               <div className="inline-flex items-center gap-2 bg-gradient-to-r from-violet-500/10 to-cyan-500/10 border border-violet-500/20 rounded-full px-6 py-2 mb-6">
                 <Smartphone className="w-4 h-4 text-cyan-400" />
-                <span className="text-sm text-gray-300">Captures d&apos;écran</span>
+                <span className="text-sm text-gray-300">Screenshots</span>
               </div>
 
               <h1 className="text-5xl md:text-7xl font-bold mb-6">
                 <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                  Découvrez
+                  Discover
                 </span>
                 <br />
                 <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
@@ -105,8 +105,7 @@ export default function Screenshots() {
               </h1>
               
               <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-                Une interface intuitive et puissante pour maîtriser le trading. 
-                Explorez les fonctionnalités qui font de RWAMS la meilleure plateforme.
+                An intuitive, powerful interface to master trading. Explore the features that make RWAMS the best platform.
               </p>
             </motion.div>
 
@@ -206,18 +205,18 @@ export default function Screenshots() {
             >
               <h2 className="text-4xl font-bold mb-6">
                 <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
-                  Et bien plus encore...
+                  And so much more...
                 </span>
               </h2>
               
               <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-12">
                 {[
-                  { label: 'Tableau de bord avancé', icon: '📊' },
-                  { label: 'Création d\'overlays personnalisés', icon: '🎨' },
-                  { label: 'Alertes de prix personnalisées', icon: '🔔' },
-                  { label: 'Carte de progression', icon: '📈' },
-                  { label: 'Stratégies de trading IA', icon: '🤖' },
-                  { label: 'Backtesting en temps réel', icon: '⚡' },
+                  { label: 'Advanced dashboard', icon: '📊' },
+                  { label: 'Custom overlay builder', icon: '🎨' },
+                  { label: 'Personalized price alerts', icon: '🔔' },
+                  { label: 'Progress tracking board', icon: '📈' },
+                  { label: 'AI trading strategies', icon: '🤖' },
+                  { label: 'Real-time backtesting', icon: '⚡' },
                 ].map((feature, index) => (
                   <motion.div
                     key={index}
@@ -246,7 +245,7 @@ export default function Screenshots() {
                   className="inline-flex items-center gap-3 bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all transform hover:scale-105 shadow-lg"
                 >
                   <Smartphone className="w-6 h-6" />
-                  Télécharger l&apos;Application
+                  Download the App
                 </a>
               </motion.div>
             </motion.div>

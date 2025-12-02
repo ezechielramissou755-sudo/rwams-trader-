@@ -10,76 +10,76 @@ const sections = [
   {
     icon: Shield,
     title: '1. Introduction',
-    content: 'RWams Trader est un simulateur de trading éducatif. Cette politique explique comment nous collectons, utilisons et protégeons vos informations.'
+    content: 'RWAMS Trader is an educational trading simulator. This policy explains how we collect, use, and protect your information.'
   },
   {
     icon: TrendingUp,
-    title: '2. Type d\'Application',
-    content: 'RWams Trader est un SIMULATEUR DE TRADING. Aucune transaction réelle n\'est effectuée et aucun argent réel n\'est impliqué.',
+    title: '2. App Type',
+    content: 'RWAMS Trader is a TRADING SIMULATOR. No real transactions are executed and no real money is involved.',
     highlight: true
   },
   {
     icon: Database,
-    title: '3. Données Collectées',
-    content: 'Nous pouvons collecter les données suivantes :',
+    title: '3. Data Collected',
+    content: 'We may collect the following data:',
     list: [
-      'Informations de profil (nom, email)',
-      'Préférences d\'application (thème, langue)',
-      'Données biométriques (empreinte digitale) utilisées uniquement pour la sécurité — stockées localement sur votre appareil',
-      'Données de marché récupérées auprès de services tiers (voir section 6)'
+      'Profile information (name, email)',
+      'App preferences (theme, language)',
+      'Biometric data (fingerprint) used only for security — stored locally on your device',
+      'Market data retrieved from third-party services (see section 6)'
     ]
   },
   {
     icon: Eye,
-    title: '4. Utilisation des Données',
-    content: 'Les données collectées servent à :',
+    title: '4. Data Usage',
+    content: 'Collected data is used to:',
     list: [
-      'Fournir les fonctionnalités de l\'application',
-      'Personnaliser votre expérience',
-      'Améliorer l\'application',
-      'Sécuriser l\'accès à l\'application'
+      'Provide app functionality',
+      'Personalize your experience',
+      'Improve the application',
+      'Secure access to the app'
     ]
   },
   {
     icon: Lock,
-    title: '5. Sécurité',
-    content: 'Mesures de sécurité mises en place :',
+    title: '5. Security',
+    content: 'Security measures in place:',
     list: [
-      'Vos données personnelles (profil, préférences) sont stockées localement et/ou sur des serveurs sécurisés',
-      'L\'application communique avec des API tierces pour récupérer des données de marché en temps réel (voir section 6)',
-      'Les données biométriques restent exclusivement sur votre appareil'
+      'Your personal data (profile, preferences) is stored locally and/or on secure servers',
+      'The app communicates with third-party APIs to retrieve real-time market data (see section 6)',
+      'Biometric data stays exclusively on your device'
     ]
   },
   {
     icon: TrendingUp,
-    title: '6. Données de Trading',
-    content: 'Important à savoir concernant les opérations :',
+    title: '6. Trading Data',
+    content: 'Important facts about operations:',
     list: [
-      'Toutes les opérations de trading sont simulées et n\'impliquent aucun argent réel',
-      'Les données de marché (prix, graphiques) sont fournies par des services tiers tels que CoinGecko et Finnhub pour garantir un réalisme maximal',
-      'L\'application ne se connecte jamais à vos comptes de courtage personnels'
+      'All trading activity is simulated and involves no real money',
+      'Market data (prices, charts) comes from third-party providers such as CoinGecko and Finnhub for maximum realism',
+      'The app never connects to your personal brokerage accounts'
     ]
   },
   {
     icon: Users,
-    title: '7. Partage de Données',
-    content: 'Nous ne partageons aucune donnée personnelle avec des tiers.'
+    title: '7. Data Sharing',
+    content: 'We do not share any personal data with third parties.'
   },
   {
     icon: FileText,
-    title: '8. Vos Droits',
-    content: 'En utilisant RWams Trader, vous disposez des droits suivants :',
+    title: '8. Your Rights',
+    content: 'As a RWAMS Trader user, you have the following rights:',
     list: [
-      'Accéder à vos données',
-      'Modifier vos informations',
-      'Supprimer votre compte',
-      'Désactiver les fonctionnalités biométriques'
+      'Access your data',
+      'Update your information',
+      'Delete your account',
+      'Disable biometric features'
     ]
   },
   {
     icon: Mail,
     title: '9. Contact',
-    content: 'Pour toute question concernant cette politique :',
+    content: 'For any questions about this policy:',
     contact: 'support@rwamstrader.com'
   }
 ];
@@ -109,20 +109,20 @@ export default function Privacy() {
           >
             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-violet-500/10 to-cyan-500/10 border border-violet-500/20 rounded-full px-6 py-2 mb-6">
               <Shield className="w-4 h-4 text-cyan-400" />
-              <span className="text-sm text-gray-300">Vos données en sécurité</span>
+              <span className="text-sm text-gray-300">Your data stays safe</span>
             </div>
 
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                Politique de
+                Privacy
               </span>{' '}
               <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
-                Confidentialité
+                Policy
               </span>
             </h1>
             
             <p className="text-xl text-gray-400">
-              Dernière mise à jour : {new Date().toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' })}
+              Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
             </p>
           </motion.div>
 
@@ -205,30 +205,30 @@ export default function Privacy() {
               </div>
               
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                ✅ SIMULATEUR ÉDUCATIF
+                ✅ EDUCATIONAL SIMULATOR
               </h2>
               
               <div className="max-w-3xl mx-auto">
                 <p className="text-lg md:text-xl text-gray-200 font-medium leading-relaxed">
-                  RWams Trader est conçu <span className="text-green-400 font-bold">uniquement à des fins d&apos;apprentissage et de formation</span>. 
+                  RWAMS Trader is built <span className="text-green-400 font-bold">for learning and training purposes only</span>.
                 </p>
                 <p className="text-lg md:text-xl text-gray-200 font-medium leading-relaxed mt-3">
-                  Aucune fonctionnalité ne permet d&apos;investir ou de perdre de l&apos;argent réel.
+                  No feature allows you to invest or lose real money.
                 </p>
               </div>
               
               <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-sm text-gray-300">
                 <div className="flex items-center gap-2 bg-black/30 px-4 py-2 rounded-full">
                   <span className="text-green-400">✓</span>
-                  <span>100% Simulé</span>
+                  <span>100% Simulated</span>
                 </div>
                 <div className="flex items-center gap-2 bg-black/30 px-4 py-2 rounded-full">
                   <span className="text-green-400">✓</span>
-                  <span>Aucun Risque Financier</span>
+                  <span>No Financial Risk</span>
                 </div>
                 <div className="flex items-center gap-2 bg-black/30 px-4 py-2 rounded-full">
                   <span className="text-green-400">✓</span>
-                  <span>Formation Sécurisée</span>
+                  <span>Safe Training</span>
                 </div>
               </div>
             </div>
@@ -242,7 +242,7 @@ export default function Privacy() {
             className="text-center mt-12"
           >
             <p className="text-gray-400 mb-4">
-              Des questions concernant notre politique de confidentialité ?
+              Questions about our privacy policy?
             </p>
             <div className="flex flex-col gap-3 items-center">
               <a
@@ -253,10 +253,10 @@ export default function Privacy() {
                 <span>→</span>
               </a>
               <a
-                href="tel:+2250502250473"
+                href="tel:+2250546100920"
                 className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-medium transition-colors"
               >
-                +225 05 02 25 04 73
+                +225 05 46 10 09 20
                 <span>→</span>
               </a>
             </div>

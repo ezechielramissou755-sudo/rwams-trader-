@@ -21,147 +21,147 @@ import { Button } from '@/components/ui/button';
 
 const featureCategories = [
   {
-    title: '🤖 OUTILS IA AVANCÉS',
+    title: '🤖 ADVANCED AI TOOLS',
     icon: Brain,
     features: [
       {
-        name: 'AI Signals - Signaux de trading IA',
+        name: 'AI Signals - AI trading signals',
         details: [
-          'Génération de signaux BUY/SELL/WAIT',
-          'Analyse technique automatique (RSI, MACD, volume)',
-          'Score de confiance 0-100%',
-          'Prédictions de prix (court/moyen/long terme)',
-          'Niveau de risque calculé',
-          'Création automatique d\'alertes'
+          'Generate BUY/SELL/WAIT signals',
+          'Automated technical analysis (RSI, MACD, volume)',
+          'Confidence score 0-100%',
+          'Price predictions (short/mid/long term)',
+          'Calculated risk level',
+          'Automatic alert creation'
         ]
       },
       {
-        name: 'Personalized AI - IA personnalisée',
+        name: 'Personalized AI - Custom AI assistant',
         details: [
-          'Assistant IA adapté à votre profil',
-          'Recommandations personnalisées',
-          'Analyse de votre style de trading'
+          'AI assistant tailored to your profile',
+          'Personalized recommendations',
+          'Analysis of your trading style'
         ]
       },
       {
-        name: 'AI Backtesting - Test de stratégies',
+        name: 'AI Backtesting - Strategy testing',
         details: [
-          'Backtesting automatique de stratégies',
-          'Analyse de performance historique',
-          'Optimisation de paramètres',
-          'Métriques : Win rate, profit factor, drawdown'
+          'Automatic strategy backtesting',
+          'Historical performance analysis',
+          'Parameter optimization',
+          'Metrics: win rate, profit factor, drawdown'
         ]
       },
       {
-        name: 'Stress Test - Test de résistance',
+        name: 'Stress Test - Resilience testing',
         details: [
-          'Simulation de scénarios extrêmes',
-          'Test de votre portefeuille en conditions de crise',
-          'Analyse de risque'
+          'Simulate extreme scenarios',
+          'Test your portfolio in crisis conditions',
+          'Risk analysis'
         ]
       },
       {
-        name: 'Sentiment Analysis - Analyse de sentiment',
+        name: 'Sentiment Analysis - Market sentiment',
         details: [
-          'Analyse du sentiment du marché',
-          'Détection de tendances sociales',
-          'Score de sentiment positif/négatif'
+          'Market sentiment analysis',
+          'Detect social trends',
+          'Positive/negative sentiment score'
         ]
       },
       {
-        name: 'What-If Analysis - Scénarios',
+        name: 'What-If Analysis - Scenario planning',
         details: [
-          'Simulation "Et si..."',
-          'Prédiction d\'impact de changements',
-          'Test de différents scénarios de trading'
+          '“What if” simulations',
+          'Predict impact of changes',
+          'Test different trading scenarios'
         ]
       },
       {
-        name: 'Voice Trading - Trading vocal',
+        name: 'Voice Trading - Voice commands',
         details: [
-          'Commandes vocales pour trader',
-          '"Acheter 0.5 BTC"',
-          '"Vendre tout mon ETH"'
+          'Trade with voice commands',
+          '“Buy 0.5 BTC”',
+          '“Sell all my ETH”'
         ]
       },
       {
-        name: 'Correlation Analysis - Corrélations',
+        name: 'Correlation Analysis - Asset correlations',
         details: [
-          'Analyse de corrélation entre actifs',
-          'Détection de patterns de mouvements similaires',
-          'Optimisation de portefeuille'
+          'Correlation analysis between assets',
+          'Detect similar movement patterns',
+          'Portfolio optimization'
         ]
       },
       {
-        name: 'Dark Pool Simulator - Simulation dark pool',
+        name: 'Dark Pool Simulator - Dark pool trading',
         details: [
-          'Simulation de trading dark pool',
-          'Analyse de liquidité cachée',
-          'Détection d\'ordres massifs'
+          'Dark pool trading simulation',
+          'Hidden liquidity analysis',
+          'Detection of massive orders'
         ]
       }
     ]
   },
   {
-    title: '📈 OUTILS D\'ANALYSE TECHNIQUE',
+    title: '📈 TECHNICAL ANALYSIS TOOLS',
     icon: BarChart3,
     features: [
       {
-        name: 'Scanner - Scanner de marché',
+        name: 'Scanner - Market scanner',
         details: [
-          'Scan en temps réel de tous les actifs',
-          'Filtres personnalisables',
-          'Détection d\'opportunités'
+          'Real-time scan across all assets',
+          'Customizable filters',
+          'Opportunity detection'
         ]
       },
       {
-        name: 'Screener IA - Filtrage intelligent',
+        name: 'AI Screener - Intelligent filtering',
         details: [
-          'Filtrage par type d\'actif (Crypto, Forex, Actions)',
-          'Filtrage par sentiment (Haussier, Baissier, Neutre)',
-          'Volatilité (Faible, Moyenne, Élevée)',
-          'Tendance (Haussière, Baissière, Sideways)',
-          'Momentum, Volume, Market Cap',
-          'Niveau de risque',
-          'Score IA (0-100)'
+          'Filter by asset type (Crypto, Forex, Stocks)',
+          'Filter by sentiment (Bullish, Bearish, Neutral)',
+          'Volatility (Low, Medium, High)',
+          'Trend (Uptrend, Downtrend, Sideways)',
+          'Momentum, volume, market cap',
+          'Risk level',
+          'AI score (0-100)'
         ]
       },
       {
-        name: 'Indicator Models - Modèles d\'indicateurs',
+        name: 'Indicator Models - Indicator packs',
         details: [
-          '50+ combinaisons prédéfinies',
+          '50+ prebuilt combinations',
           'Scalping (RSI, VWAP, Force Index)',
-          'Day Trading (EMA, MACD, Volume)',
-          'Swing Trading (EMA 50/200, Bollinger)',
-          'Tendance, Momentum, Volatilité',
-          'RSI Divergence, MACD Crossover',
-          'Support/Resistance'
+          'Day trading (EMA, MACD, Volume)',
+          'Swing trading (EMA 50/200, Bollinger)',
+          'Trend, momentum, volatility',
+          'RSI divergence, MACD crossover',
+          'Support/resistance'
         ]
       },
       {
-        name: 'Multi-Asset Comparison - Comparaison multiple',
+        name: 'Multi-Asset Comparison - Compare assets',
         details: [
-          'Comparer jusqu\'à 4 actifs simultanément',
-          'Graphiques superposés',
-          'Analyse comparative de performance'
+          'Compare up to 4 assets simultaneously',
+          'Overlay charts',
+          'Compare performance'
         ]
       },
       {
-        name: 'Pattern Detection - Détection de patterns',
+        name: 'Pattern Detection - Chart patterns',
         details: [
-          'Détection automatique de patterns graphiques',
+          'Automatic chart pattern detection',
           'Head & Shoulders, Triangles, Flags, Wedges',
-          'Signaux de confirmation'
+          'Confirmation signals'
         ]
       },
       {
-        name: 'Chart Indicators Panel - Panneau d\'indicateurs',
+        name: 'Chart Indicators Panel - Indicator panel',
         details: [
-          'RSI avec mini-graphique',
-          'MACD (histogramme + lignes)',
+          'RSI with mini chart',
+          'MACD (histogram + lines)',
           'EMA 20/50',
-          'Volume 24h',
-          'Interface style TradingView'
+          '24h volume',
+          'TradingView-style interface'
         ]
       }
     ]
@@ -185,7 +185,7 @@ export default function Pricing() {
           >
             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-violet-500/10 to-cyan-500/10 border border-violet-500/20 rounded-full px-6 py-2 mb-6">
               <Crown className="w-4 h-4 text-cyan-400" />
-              <span className="text-sm text-gray-300">Plan Premium</span>
+              <span className="text-sm text-gray-300">Premium plan</span>
             </div>
 
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -199,7 +199,7 @@ export default function Pricing() {
             </h1>
             
             <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-8">
-              Accédez à tous les outils IA et d&apos;analyse technique avancés pour devenir un trader professionnel.
+              Unlock every advanced AI and technical analysis tool to become a professional trader.
             </p>
 
             {/* Price Card */}
@@ -218,9 +218,9 @@ export default function Pricing() {
                   <div className="text-5xl font-bold bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent mb-2">
                     $14.99
                   </div>
-                  <div className="text-gray-400 mb-6">par mois</div>
+                  <div className="text-gray-400 mb-6">per month</div>
                   <Button className="w-full bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 text-white border-0 rounded-full py-6 text-lg font-semibold transition-all duration-300 hover:scale-105">
-                    S'abonner maintenant
+                    Subscribe now
                   </Button>
                 </div>
               </div>
@@ -278,13 +278,13 @@ export default function Pricing() {
             <div className="bg-gradient-to-r from-violet-500/10 to-cyan-500/10 border border-violet-500/20 rounded-3xl p-12">
               <Crown className="w-16 h-16 text-cyan-400 mx-auto mb-6" />
               <h2 className="text-3xl font-bold text-white mb-4">
-                Prêt à devenir un trader professionnel ?
+                Ready to become a professional trader?
               </h2>
               <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-                Rejoignez des milliers de traders qui utilisent nos outils IA pour améliorer leurs performances.
+                Join thousands of traders who rely on our AI tools to boost their performance.
               </p>
               <Button className="bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 text-white border-0 px-8 py-6 text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105">
-                Commencer maintenant
+                Get started now
                 <span className="ml-2">→</span>
               </Button>
             </div>

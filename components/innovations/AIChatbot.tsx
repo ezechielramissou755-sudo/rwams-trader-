@@ -6,31 +6,31 @@ import { MessageCircle, X, Send, Bot } from 'lucide-react';
 
 const predefinedAnswers = [
   { 
-    keywords: ['prix', 'coût', 'abonnement', 'tarif'],
-    answer: "Notre abonnement est à seulement $14.99/mois avec accès à tous les outils IA !"
+    keywords: ['price', 'cost', 'subscription', 'pricing'],
+    answer: "Our plan is just $14.99/month with access to every AI tool!"
   },
   {
-    keywords: ['fonctionnalités', 'features', 'outils'],
-    answer: "Nous offrons 9 outils IA: Signaux de trading, IA personnalisée, Backtesting, Stress Test, Analyse de sentiment, et plus !"
+    keywords: ['features', 'tools', 'capabilities'],
+    answer: "We provide 9 AI modules: trading signals, personalized AI, backtesting, stress tests, sentiment analysis, and more!"
   },
   {
-    keywords: ['investir', 'investisseur', 'financement'],
-    answer: "Consultez notre page Investisseurs pour voir notre potentiel de croissance et business model !"
+    keywords: ['invest', 'investor', 'funding'],
+    answer: "Visit our Investors page to explore the growth potential and business model!"
   },
   {
-    keywords: ['télécharger', 'download', 'app'],
-    answer: "Notre app Android (100 MB, Version 1.0.0) est disponible en téléchargement sur la page d'accueil !"
+    keywords: ['download', 'app', 'apk'],
+    answer: "Our Android app (100 MB, version 1.0.0) is available for download on the home page!"
   },
   {
-    keywords: ['contact', 'email', 'téléphone'],
-    answer: "Contactez-nous: contact@rwams-traders.com ou +225 05 02 25 04 73"
+    keywords: ['contact', 'email', 'phone'],
+    answer: "Reach us at contact@rwams-traders.com or +225 05 46 10 09 20"
   },
 ];
 
 export default function AIChatbot() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { type: 'bot', text: 'Bonjour ! 👋 Je suis l\'assistant RWAMS. Comment puis-je vous aider ?' }
+    { type: 'bot', text: 'Hi there! 👋 I\'m the RWAMS assistant. How can I help you today?' }
   ]);
   const [input, setInput] = useState('');
 
@@ -42,7 +42,7 @@ export default function AIChatbot() {
     
     // Find matching answer
     const lowerInput = input.toLowerCase();
-    let answer = "Merci pour votre question ! Pour plus d'informations, contactez-nous à contact@rwams-traders.com";
+    let answer = "Thanks for your question! For more details, email contact@rwams-traders.com";
     
     for (const qa of predefinedAnswers) {
       if (qa.keywords.some(keyword => lowerInput.includes(keyword))) {
@@ -107,8 +107,8 @@ export default function AIChatbot() {
                 <Bot className="w-6 h-6 text-white" />
               </div>
               <div>
-                <div className="font-bold text-white">Assistant RWAMS</div>
-                <div className="text-xs text-white/70">En ligne • Répond instantanément</div>
+                <div className="font-bold text-white">RWAMS Assistant</div>
+                <div className="text-xs text-white/70">Online • Replies instantly</div>
               </div>
             </div>
 
@@ -142,7 +142,7 @@ export default function AIChatbot() {
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   onKeyPress={(e) => e.key === 'Enter' && handleSend()}
-                  placeholder="Posez votre question..."
+                  placeholder="Ask your question..."
                   className="flex-1 bg-slate-800 text-white rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-violet-500"
                 />
                 <button

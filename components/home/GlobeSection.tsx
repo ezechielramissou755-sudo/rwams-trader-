@@ -6,7 +6,7 @@ import { Globe, TrendingUp, Target } from 'lucide-react';
 
 export default function GlobeSection() {
   useEffect(() => {
-    // Script pour charger et initialiser le globe 3D
+    // Script to load and initialize the 3D globe
     const globeScript = document.createElement('script');
     globeScript.type = 'module';
     globeScript.textContent = `
@@ -38,7 +38,7 @@ export default function GlobeSection() {
             { location: [40.7128, -74.006], size: 0.08 },     // New York
             { location: [51.5074, -0.1278], size: 0.06 },     // London
             { location: [35.6762, 139.6503], size: 0.07 },    // Tokyo
-            { location: [5.3600, -4.0083], size: 0.1 },       // Abidjan (Côte d'Ivoire) - Plus gros marker
+            { location: [5.3600, -4.0083], size: 0.1 },       // Abidjan (Ivory Coast) - Largest marker
             { location: [-33.8688, 151.2093], size: 0.05 },   // Sydney
             { location: [55.7558, 37.6173], size: 0.05 },     // Moscow
             { location: [-23.5505, -46.6333], size: 0.05 },   // São Paulo
@@ -87,22 +87,22 @@ export default function GlobeSection() {
           >
             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-violet-500/10 to-cyan-500/10 border border-violet-500/20 rounded-full px-6 py-2 mb-8">
               <Target className="w-4 h-4 text-cyan-400" />
-              <span className="text-sm text-gray-300">Notre Mission Mondiale</span>
+              <span className="text-sm text-gray-300">Our Global Mission</span>
             </div>
 
             <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
-              <span className="block text-white mb-2">Objectif :</span>
+              <span className="block text-white mb-2">Our Goal:</span>
               <span className="block bg-gradient-to-r from-violet-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
-                Conquérir le monde
+                Go global
               </span>
               <span className="block text-white/90 text-4xl mt-2">
-                avec RWAMS Traders
+                with RWAMS Traders
               </span>
             </h2>
 
             <p className="text-xl text-gray-400 mb-8 leading-relaxed">
-              De l'Afrique aux autres continents, RWAMS Traders prépare sa révolution 
-              du trading simulé. Soyez parmi les premiers à rejoindre cette aventure mondiale.
+              From Africa to the rest of the world, RWAMS Traders is sparking a simulated-trading revolution.
+              Be among the first to join the global adventure.
             </p>
 
             <div className="grid grid-cols-2 gap-6 mb-8">
@@ -110,22 +110,22 @@ export default function GlobeSection() {
                 <div className="text-3xl font-bold text-white mb-2">
                   0
                 </div>
-                <div className="text-sm text-gray-400">Traders actuels</div>
-                <div className="text-xs text-cyan-400 mt-1">→ Objectif: 100M+</div>
+                <div className="text-sm text-gray-400">Current traders</div>
+                <div className="text-xs text-cyan-400 mt-1">→ Goal: 100M+</div>
               </div>
               <div className="bg-slate-900/50 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
                 <div className="text-3xl font-bold text-white mb-2">
                   1
                 </div>
-                <div className="text-sm text-gray-400">Pays (Côte d'Ivoire)</div>
-                <div className="text-xs text-cyan-400 mt-1">→ Objectif: 100+</div>
+                <div className="text-sm text-gray-400">Country (Ivory Coast)</div>
+                <div className="text-xs text-cyan-400 mt-1">→ Goal: 100+</div>
               </div>
             </div>
 
             <div className="flex items-center gap-4 text-sm">
               <TrendingUp className="w-5 h-5 text-cyan-400" />
               <span className="text-gray-400">
-                <span className="text-violet-400 font-semibold">Lancement imminent</span> - Préparez-vous pour l'expansion mondiale
+                <span className="text-violet-400 font-semibold">Launch incoming</span> – get ready for worldwide expansion
               </span>
             </div>
           </motion.div>
