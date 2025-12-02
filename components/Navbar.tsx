@@ -63,12 +63,13 @@ export default function Navbar() {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-violet-500 to-cyan-500 group-hover:w-full transition-all duration-300" />
               </Link>
             ))}
-            <Button
-              className="bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 text-white border-0 rounded-full transition-all duration-300 hover:scale-105 shadow-lg shadow-violet-500/30"
-              onClick={() => window.location.href = '#download'}
+            <a
+              href="/app-release.apk"
+              download
+              className="bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 text-white border-0 rounded-full transition-all duration-300 hover:scale-105 shadow-lg shadow-violet-500/30 px-6 py-2 font-semibold"
             >
               Download
-            </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -96,15 +97,14 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <Button
-              className="w-full bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 text-white border-0 rounded-full"
-              onClick={() => {
-                setMobileMenuOpen(false);
-                window.location.href = '#download';
-              }}
+            <a
+              href="/app-release.apk"
+              download
+              className="block text-center w-full bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 text-white border-0 rounded-full py-3 font-semibold"
+              onClick={() => setMobileMenuOpen(false)}
             >
               Download
-            </Button>
+            </a>
           </div>
         </div>
       )}

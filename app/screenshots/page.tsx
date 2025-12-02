@@ -241,7 +241,8 @@ export default function Screenshots() {
                 className="mt-16"
               >
                 <a
-                  href="/"
+                  href="/app-release.apk"
+                  download
                   className="inline-flex items-center gap-3 bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all transform hover:scale-105 shadow-lg"
                 >
                   <Smartphone className="w-6 h-6" />
