@@ -100,13 +100,25 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-6">Contact</h4>
             <ul className="space-y-4">
-              <li className="flex items-center gap-3 text-gray-400">
-                <Mail className="w-5 h-5 text-cyan-500" />
-                contact@rwams-trader.world
+              <li>
+                <a
+                  href="mailto:contact@rwams-trader.world"
+                  className="flex items-center gap-3 text-gray-400 hover:text-cyan-400 transition-colors"
+                >
+                  <Mail className="w-5 h-5 text-cyan-500" />
+                  contact@rwams-trader.world
+                </a>
               </li>
-              <li className="flex items-center gap-3 text-gray-400">
-                <Phone className="w-5 h-5 text-cyan-500" />
-                +225 05 46 10 09 20
+              <li>
+                <a
+                  href="https://wa.me/2250546100920"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-gray-400 hover:text-cyan-400 transition-colors"
+                >
+                  <Phone className="w-5 h-5 text-cyan-500" />
+                  +225 05 46 10 09 20
+                </a>
               </li>
               <li className="flex items-center gap-3 text-gray-400">
                 <MapPin className="w-5 h-5 text-cyan-500" />

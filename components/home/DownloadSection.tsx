@@ -76,7 +76,7 @@ export default function DownloadSection() {
             </a>
 
             <p className="text-gray-500 text-sm mt-4">
-              Version 1.0.0 • 100 MB • Android 8.0+
+              Version 1.0.0 • 70 MB • Android 8.0+
             </p>
           </motion.div>
 

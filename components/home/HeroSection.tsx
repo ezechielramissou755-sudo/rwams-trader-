@@ -76,27 +76,23 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="flex flex-col sm:flex-row items-center justify-center"
             id="download"
           >
-            <Button
-              size="lg"
-              className="group bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 text-white border-0 px-8 py-6 text-lg rounded-full shadow-2xl shadow-violet-500/30 hover:shadow-violet-500/50 transition-all duration-300 hover:scale-105"
-              onClick={() => window.open('https://example.com/rwams-traders.apk', '_blank')}
+            <a
+              href="/app-release.apk"
+              download
+              className="w-full sm:w-auto"
             >
-              <Download className="w-5 h-5 mr-2" />
-              Download APK
-              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white/20 bg-white/5 text-white hover:bg-white/10 px-8 py-6 text-lg rounded-full backdrop-blur-sm"
-            >
-              <Play className="w-5 h-5 mr-2" />
-              Watch demo
-            </Button>
+              <Button
+                size="lg"
+                className="w-full group bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 text-white border-0 px-8 py-6 text-lg rounded-full shadow-2xl shadow-violet-500/30 hover:shadow-violet-500/50 transition-all duration-300 hover:scale-105"
+              >
+                <Download className="w-5 h-5 mr-2" />
+                Télécharger l'APK
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </a>
           </motion.div>
 
           {/* Investor-Ready Badge */}

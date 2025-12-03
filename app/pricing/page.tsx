@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import AnimatedBackground from '@/components/AnimatedBackground';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -169,6 +169,12 @@ const featureCategories = [
 ];
 
 export default function Pricing() {
+  const [subscribeMessage, setSubscribeMessage] = useState('');
+
+  const handleSubscribeClick = () => {
+    setSubscribeMessage('Toutes les fonctionnalités RWAMS Traders sont actuellement gratuites. Profitez-en dès maintenant !');
+  };
+
   return (
     <div className="min-h-screen bg-slate-950 text-white">
       <AnimatedBackground />
@@ -219,9 +225,17 @@ export default function Pricing() {
                     $14.99
                   </div>
                   <div className="text-gray-400 mb-6">per month</div>
-                  <Button className="w-full bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 text-white border-0 rounded-full py-6 text-lg font-semibold transition-all duration-300 hover:scale-105">
+                  <Button
+                    className="w-full bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 text-white border-0 rounded-full py-6 text-lg font-semibold transition-all duration-300 hover:scale-105"
+                    onClick={handleSubscribeClick}
+                  >
                     Subscribe now
                   </Button>
+                  {subscribeMessage && (
+                    <p className="mt-4 text-sm text-emerald-300 bg-emerald-500/10 border border-emerald-500/30 rounded-2xl px-4 py-3">
+                      {subscribeMessage}
+                    </p>
+                  )}
                 </div>
               </div>
             </motion.div>

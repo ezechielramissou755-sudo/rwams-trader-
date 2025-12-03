@@ -2,57 +2,54 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { TrendingUp, Users, Zap, Target, Award, Globe } from 'lucide-react';
+import { TrendingUp, Target, Award, Globe, Download, Shield, Zap } from 'lucide-react';
 
-const stats = [
+type Stat = {
+  icon: React.ComponentType<{ className?: string }>;
+  label: string;
+  value?: number;
+  prefix?: string;
+  suffix?: string;
+  displayText?: string;
+  color: string;
+  glowColor: string;
+};
+
+const stats: Stat[] = [
   {
-    icon: Users,
-    label: 'Active Traders',
-    value: 15432,
-    suffix: '+',
-    color: 'from-violet-500 to-purple-500',
-    glowColor: 'rgba(139, 92, 246, 0.5)',
-  },
-  {
-    icon: TrendingUp,
-    label: 'Average Profit',
-    value: 87.5,
-    prefix: '+',
-    suffix: '%',
-    color: 'from-emerald-500 to-teal-500',
-    glowColor: 'rgba(16, 185, 129, 0.5)',
-  },
-  {
-    icon: Zap,
-    label: 'Winning Trades',
-    value: 92.3,
-    suffix: '%',
+    icon: Download,
+    label: "Taille de l'APK",
+    displayText: '70 Mo',
     color: 'from-cyan-500 to-blue-500',
     glowColor: 'rgba(6, 182, 212, 0.5)',
   },
   {
     icon: Target,
-    label: 'AI Accuracy',
-    value: 94.8,
-    suffix: '%',
-    color: 'from-amber-500 to-orange-500',
-    glowColor: 'rgba(245, 158, 11, 0.5)',
+    label: 'Accès actuel',
+    displayText: 'Toutes les fonctionnalités sont gratuites',
+    color: 'from-violet-500 to-purple-500',
+    glowColor: 'rgba(139, 92, 246, 0.5)',
   },
   {
     icon: Award,
-    label: 'Satisfaction',
-    value: 98,
-    suffix: '%',
+    label: 'Version actuelle',
+    displayText: 'Android 1.0.0 (70 MB)',
     color: 'from-pink-500 to-rose-500',
     glowColor: 'rgba(236, 72, 153, 0.5)',
   },
   {
     icon: Globe,
-    label: 'Active Countries',
-    value: 127,
-    suffix: '+',
+    label: 'Support officiel',
+    displayText: 'contact@rwams-trader.world',
     color: 'from-indigo-500 to-purple-500',
     glowColor: 'rgba(99, 102, 241, 0.5)',
+  },
+  {
+    icon: Shield,
+    label: 'WhatsApp assistance',
+    displayText: '+225 05 46 10 09 20',
+    color: 'from-amber-500 to-orange-500',
+    glowColor: 'rgba(245, 158, 11, 0.5)',
   },
 ];
 
@@ -79,16 +76,20 @@ export default function FuturisticStats() {
 
   // Animate counter
   useEffect(() => {
+    if (currentStat.displayText || typeof currentStat.value === 'undefined') {
+      return;
+    }
+
     setDisplayValue(0);
     const duration = 1500;
     const steps = 60;
-    const increment = currentStat.value / steps;
+    const increment = (currentStat.value || 0) / steps;
     let current = 0;
 
     const timer = setInterval(() => {
       current += increment;
-      if (current >= currentStat.value) {
-        setDisplayValue(currentStat.value);
+      if (current >= (currentStat.value || 0)) {
+        setDisplayValue(currentStat.value || 0);
         clearInterval(timer);
       } else {
         setDisplayValue(current);
@@ -96,7 +97,7 @@ export default function FuturisticStats() {
     }, duration / steps);
 
     return () => clearInterval(timer);
-  }, [currentIndex, currentStat.value]);
+  }, [currentIndex, currentStat]);
 
   if (!isMounted) {
     return null;
@@ -171,13 +172,17 @@ export default function FuturisticStats() {
                   transition={{ delay: 0.2, type: 'spring' }}
                   className="mb-4"
                 >
-                  <div className={`text-5xl font-bold bg-gradient-to-r ${currentStat.color} bg-clip-text text-transparent`}>
-                    {currentStat.prefix}
-                    {displayValue.toLocaleString('en-US', {
-                      maximumFractionDigits: currentStat.value % 1 !== 0 ? 1 : 0,
-                    })}
-                    {currentStat.suffix}
-                  </div>
+                  {currentStat.displayText ? (
+                    <div className={`text-2xl font-semibold text-white`}>{currentStat.displayText}</div>
+                  ) : (
+                    <div className={`text-5xl font-bold bg-gradient-to-r ${currentStat.color} bg-clip-text text-transparent`}>
+                      {currentStat.prefix}
+                      {displayValue.toLocaleString('en-US', {
+                        maximumFractionDigits: currentStat.value && currentStat.value % 1 !== 0 ? 1 : 0,
+                      })}
+                      {currentStat.suffix}
+                    </div>
+                  )}
                 </motion.div>
 
                 {/* Progress dots */}

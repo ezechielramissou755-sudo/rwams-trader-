@@ -7,7 +7,6 @@ import FeaturesSection from '@/components/home/FeaturesSection';
 import GlobeSection from '@/components/home/GlobeSection';
 import DownloadSection from '@/components/home/DownloadSection';
 import FuturisticStats from '@/components/effects/FuturisticStats';
-import AIChatbot from '@/components/innovations/AIChatbot';
 import InteractiveFAQ from '@/components/innovations/InteractiveFAQ';
 import ParticlesBackground from '@/components/effects/ParticlesBackground';
 import FloatingParticles from '@/components/effects/FloatingParticles';
@@ -46,7 +45,6 @@ export default function Home() {
 
         {/* Floating Elements */}
         <FuturisticStats />
-        <AIChatbot />
       </div>
       
       {/* Modern animations */}

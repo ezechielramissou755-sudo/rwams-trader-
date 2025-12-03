@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     question: "Can I use RWAMS on mobile?",
-    answer: "Yes. Our Android app (100 MB) is ready to download today. iOS version is coming soon."
+    answer: "Yes. Our Android app (70 MB) is ready to download today. iOS version is coming soon."
   },
   {
     question: "Is there a refund guarantee?",

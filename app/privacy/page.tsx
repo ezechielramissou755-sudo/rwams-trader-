@@ -80,7 +80,7 @@ const sections = [
     icon: Mail,
     title: '9. Contact',
     content: 'For any questions about this policy:',
-    contact: 'support@rwamstrader.com'
+    contact: 'contact@rwams-trader.world'
   }
 ];
 
@@ -254,17 +254,10 @@ export default function Privacy() {
             </p>
             <div className="flex flex-col gap-3 items-center">
               <a
-                href="mailto:support@rwamstrader.com"
+                href="mailto:contact@rwams-trader.world"
                 className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-medium transition-colors"
               >
-                support@rwamstrader.com
-                <span>→</span>
-              </a>
-              <a
-                href="tel:+2250546100920"
-                className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-medium transition-colors"
-              >
-                +225 05 46 10 09 20
+                contact@rwams-trader.world
                 <span>→</span>
               </a>
             </div>

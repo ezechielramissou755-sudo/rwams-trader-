@@ -3,6 +3,16 @@
 import React from 'react';
 
 export default function AnimatedBackground() {
+  const [isMounted, setIsMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
+
   return (
     <div className="fixed inset-0 -z-10 overflow-hidden">
       {/* Gradient base */}

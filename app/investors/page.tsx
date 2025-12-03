@@ -326,13 +326,17 @@ export default function Investors() {
                 Join us in revolutionizing trading education in Africa and beyond.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button className="bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 text-white border-0 px-10 py-6 text-lg rounded-2xl">
-                  <Mail className="w-5 h-5 mr-2" />
-                  contact@rwams-trader.world
-                </Button>
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-10 py-6 text-lg rounded-2xl">
-                  +225 05 46 10 09 20
-                </Button>
+                <a href="mailto:contact@rwams-trader.world" className="inline-block">
+                  <Button className="w-full bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 text-white border-0 px-10 py-6 text-lg rounded-2xl">
+                    <Mail className="w-5 h-5 mr-2" />
+                    contact@rwams-trader.world
+                  </Button>
+                </a>
+                <a href="https://wa.me/2250546100920" target="_blank" rel="noopener noreferrer" className="inline-block">
+                  <Button variant="outline" className="w-full border-white/20 text-white hover:bg-white/10 px-10 py-6 text-lg rounded-2xl">
+                    +225 05 46 10 09 20
+                  </Button>
+                </a>
               </div>
             </motion.div>
 

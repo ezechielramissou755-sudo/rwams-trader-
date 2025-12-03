@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 interface Particle {
   x: number;
@@ -15,8 +15,32 @@ export default function ParticlesBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const particlesRef = useRef<Particle[]>([]);
   const mouseRef = useRef({ x: 0, y: 0 });
+  const animationFrameRef = useRef<number>();
+  const [shouldAnimate, setShouldAnimate] = useState(false);
 
   useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
+    const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    const update = () => {
+      setShouldAnimate(!mediaQuery.matches && !motionQuery.matches);
+    };
+
+    update();
+    mediaQuery.addEventListener('change', update);
+    motionQuery.addEventListener('change', update);
+
+    return () => {
+      mediaQuery.removeEventListener('change', update);
+      motionQuery.removeEventListener('change', update);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!shouldAnimate) {
+      return;
+    }
+
     const canvas = canvasRef.current;
     if (!canvas) return;
 
@@ -32,7 +56,7 @@ export default function ParticlesBackground() {
     window.addEventListener('resize', updateCanvasSize);
 
     // Initialize particles (reduced for performance)
-    const particleCount = 50;
+    const particleCount = window.innerWidth < 1280 ? 30 : 50;
     particlesRef.current = Array.from({ length: particleCount }, () => ({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
@@ -110,7 +134,7 @@ export default function ParticlesBackground() {
         });
       });
 
-      requestAnimationFrame(animate);
+      animationFrameRef.current = requestAnimationFrame(animate);
     };
 
     animate();
@@ -118,14 +142,17 @@ export default function ParticlesBackground() {
     return () => {
       window.removeEventListener('resize', updateCanvasSize);
       window.removeEventListener('mousemove', handleMouseMove);
+      if (animationFrameRef.current) {
+        cancelAnimationFrame(animationFrameRef.current);
+      }
     };
-  }, []);
+  }, [shouldAnimate]);
 
   return (
     <canvas
       ref={canvasRef}
       className="fixed inset-0 pointer-events-none z-[1]"
-      style={{ opacity: 0.6, willChange: 'transform' }}
+      style={{ opacity: shouldAnimate ? 0.6 : 0, transition: 'opacity 0.3s ease' }}
     />
   );
 }
