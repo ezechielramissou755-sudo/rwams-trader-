@@ -19,7 +19,7 @@ const stats: Stat[] = [
   {
     icon: Download,
     label: "Taille de l'APK",
-    displayText: '70 Mo',
+    displayText: '70 MB',
     color: 'from-cyan-500 to-blue-500',
     glowColor: 'rgba(6, 182, 212, 0.5)',
   },
@@ -107,7 +107,7 @@ export default function FuturisticStats() {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="fixed bottom-8 right-8 z-50"
+      className="fixed bottom-8 left-8 z-50"
     >
       <AnimatePresence mode="wait">
         {!isMinimized ? (
