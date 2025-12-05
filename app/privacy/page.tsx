@@ -47,8 +47,7 @@ const sections = [
     list: [
       'Your personal data (profile, preferences) is stored locally and/or on secure servers',
       'The app communicates with third-party APIs to retrieve real-time market data (see section 6)',
-      'Biometric data stays exclusively on your device',
-      'The web platform is protected with a strict Content Security Policy (CSP) and modern browser headers to block malicious scripts'
+      'Biometric data stays exclusively on your device'
     ]
   },
   {
@@ -82,16 +81,6 @@ const sections = [
     title: '9. Contact',
     content: 'For any questions about this policy:',
     contact: 'contact@rwams-trader.world'
-  },
-  {
-    icon: AlertCircle,
-    title: '10. Mobile app distribution',
-    content: 'To keep users safe when downloading RWAMS Trader on Android:',
-    list: [
-      'Direct APK downloads include a published SHA-256 checksum so users can verify file integrity',
-      'We are migrating distribution toward official app stores and signed delivery channels to prevent tampering',
-      'APK files are scanned and rotated frequently; compromised packages can be revoked immediately'
-    ]
   }
 ];
 
