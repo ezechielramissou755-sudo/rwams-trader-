@@ -15,56 +15,121 @@ type Stat = {
   glowColor: string;
 };
 
-const stats: Stat[] = [
-  {
-    icon: Download,
-    label: "Taille de l'APK",
-    displayText: '70 MB',
-    color: 'from-cyan-500 to-blue-500',
-    glowColor: 'rgba(6, 182, 212, 0.5)',
-  },
-  {
-    icon: Target,
-    label: 'Accès actuel',
-    displayText: 'Toutes les fonctionnalités sont gratuites',
-    color: 'from-violet-500 to-purple-500',
-    glowColor: 'rgba(139, 92, 246, 0.5)',
-  },
-  {
-    icon: Award,
-    label: 'Version actuelle',
-    displayText: 'Android 1.0.0 (70 MB)',
-    color: 'from-pink-500 to-rose-500',
-    glowColor: 'rgba(236, 72, 153, 0.5)',
-  },
-  {
-    icon: Globe,
-    label: 'Support officiel',
-    displayText: 'contact@rwams-trader.world',
-    color: 'from-indigo-500 to-purple-500',
-    glowColor: 'rgba(99, 102, 241, 0.5)',
-  },
-  {
-    icon: Shield,
-    label: 'WhatsApp assistance',
-    displayText: '+225 05 46 10 09 20',
-    color: 'from-amber-500 to-orange-500',
-    glowColor: 'rgba(245, 158, 11, 0.5)',
-  },
-];
+type Language = 'fr' | 'en';
+
+const statsByLanguage: Record<Language, Stat[]> = {
+  fr: [
+    {
+      icon: Download,
+      label: "Taille de l'APK",
+      displayText: '70 MB',
+      color: 'from-cyan-500 to-blue-500',
+      glowColor: 'rgba(6, 182, 212, 0.5)',
+    },
+    {
+      icon: Target,
+      label: 'Accès actuel',
+      displayText: 'Toutes les fonctionnalités sont gratuites',
+      color: 'from-violet-500 to-purple-500',
+      glowColor: 'rgba(139, 92, 246, 0.5)',
+    },
+    {
+      icon: Award,
+      label: 'Version actuelle',
+      displayText: 'Android 1.0.0 (70 MB)',
+      color: 'from-pink-500 to-rose-500',
+      glowColor: 'rgba(236, 72, 153, 0.5)',
+    },
+    {
+      icon: Globe,
+      label: 'Support officiel',
+      displayText: 'contact@rwams-trader.world',
+      color: 'from-indigo-500 to-purple-500',
+      glowColor: 'rgba(99, 102, 241, 0.5)',
+    },
+    {
+      icon: Shield,
+      label: 'WhatsApp assistance',
+      displayText: '+225 05 46 10 09 20',
+      color: 'from-amber-500 to-orange-500',
+      glowColor: 'rgba(245, 158, 11, 0.5)',
+    },
+  ],
+  en: [
+    {
+      icon: Download,
+      label: 'APK Size',
+      displayText: '70 MB',
+      color: 'from-cyan-500 to-blue-500',
+      glowColor: 'rgba(6, 182, 212, 0.5)',
+    },
+    {
+      icon: Target,
+      label: 'Current access',
+      displayText: 'All features are free right now',
+      color: 'from-violet-500 to-purple-500',
+      glowColor: 'rgba(139, 92, 246, 0.5)',
+    },
+    {
+      icon: Award,
+      label: 'Current version',
+      displayText: 'Android 1.0.0 (70 MB)',
+      color: 'from-pink-500 to-rose-500',
+      glowColor: 'rgba(236, 72, 153, 0.5)',
+    },
+    {
+      icon: Globe,
+      label: 'Official support',
+      displayText: 'contact@rwams-trader.world',
+      color: 'from-indigo-500 to-purple-500',
+      glowColor: 'rgba(99, 102, 241, 0.5)',
+    },
+    {
+      icon: Shield,
+      label: 'WhatsApp assistance',
+      displayText: '+225 05 46 10 09 20',
+      color: 'from-amber-500 to-orange-500',
+      glowColor: 'rgba(245, 158, 11, 0.5)',
+    },
+  ],
+};
+
+const detectLanguage = (): Language => {
+  if (typeof document !== 'undefined') {
+    const htmlLang = document.documentElement.lang?.toLowerCase() || '';
+    if (htmlLang.startsWith('fr')) {
+      return 'fr';
+    }
+    if (htmlLang.startsWith('en')) {
+      return 'en';
+    }
+  }
+
+  if (typeof navigator !== 'undefined') {
+    return navigator.language.toLowerCase().startsWith('fr') ? 'fr' : 'en';
+  }
+
+  return 'en';
+};
 
 export default function FuturisticStats() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [displayValue, setDisplayValue] = useState(0);
   const [isMinimized, setIsMinimized] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
-
-  const currentStat = stats[currentIndex];
+  const [language, setLanguage] = useState<Language>('en');
+  const stats = statsByLanguage[language];
+  const currentStat = stats[currentIndex] ?? stats[0];
 
   // Prevent hydration mismatch
   useEffect(() => {
     setIsMounted(true);
+    setLanguage(detectLanguage());
   }, []);
+
+  useEffect(() => {
+    setCurrentIndex(0);
+  }, [language]);
 
   // Rotate through stats
   useEffect(() => {
@@ -72,7 +137,7 @@ export default function FuturisticStats() {
       setCurrentIndex((prev) => (prev + 1) % stats.length);
     }, 4000);
     return () => clearInterval(interval);
-  }, []);
+  }, [stats.length]);
 
   // Animate counter
   useEffect(() => {
