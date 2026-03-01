@@ -66,7 +66,7 @@ export default function Navbar() {
               </Link>
             ))}
             <a
-              href="/app-release.aab"
+              href="/app-release.apk"
               download
               className="group relative inline-flex items-center justify-center rounded-full px-6 py-2 font-semibold text-white transition-all duration-300 hover:scale-[1.03] shadow-lg shadow-violet-500/25"
             >
@@ -102,7 +102,7 @@ export default function Navbar() {
               </Link>
             ))}
             <a
-              href="/app-release.aab"
+              href="/app-release.apk"
               download
               className="block text-center w-full bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 text-white border-0 rounded-full py-3 font-semibold shadow-lg shadow-violet-500/20"
               onClick={() => setMobileMenuOpen(false)}

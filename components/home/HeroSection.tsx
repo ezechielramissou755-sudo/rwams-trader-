@@ -64,15 +64,14 @@ export default function HeroSection() {
               className="mt-10 flex flex-wrap items-center gap-5"
               id="download"
             >
-              <a href="/app-release.aab" download className="inline-flex">
-                <Button
-                  size="lg"
-                  className="group rounded-full border border-transparent px-10 py-7 text-lg font-semibold text-white bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 shadow-2xl shadow-violet-500/25 transition-transform hover:scale-[1.03]"
-                >
-                  <Download className="w-5 h-5 mr-2" />
-                  Télécharger l'APK
-                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                </Button>
+              <a
+                href="/app-release.apk"
+                download
+                className="group inline-flex items-center justify-center rounded-full border border-transparent px-10 py-7 text-lg font-semibold text-white bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 shadow-2xl shadow-violet-500/25 transition-transform hover:scale-[1.03]"
+              >
+                <Download className="w-5 h-5 mr-2" />
+                Télécharger l'APK
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </a>
 
               <a
