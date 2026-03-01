@@ -81,7 +81,7 @@ const sections = [
     title: '9. Contact',
     content: 'For any questions about this policy:',
     contact: 'contact@rwams-trader.world'
-  }
+  }!
 ];
 
 export default function Privacy() {

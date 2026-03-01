@@ -17,6 +17,13 @@ const teamMembers = [
     description: 'Visionary leader steering RWAMS Traders with a clear mission to democratize trading education.'
   },
   {
+    name: 'Thes Berenice',
+    title: "Vice présidente du conseil d'administration",
+    role: 'Governance',
+    image: 'https://ui-avatars.com/api/?name=Thes+Berenice&size=400&background=ec4899&color=fff&bold=true',
+    description: 'Vice President of the Board of Directors, supporting strategic decisions and long-term governance at RWAMS Traders.'
+  },
+  {
     name: 'Prince Nonka',
     title: 'COO',
     role: 'Operations',

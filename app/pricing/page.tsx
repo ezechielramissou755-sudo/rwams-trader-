@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import AnimatedBackground from '@/components/AnimatedBackground';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { motion } from 'framer-motion';
@@ -177,7 +176,6 @@ export default function Pricing() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white">
-      <AnimatedBackground />
       <Navbar />
       
       <main className="pt-32 pb-20">

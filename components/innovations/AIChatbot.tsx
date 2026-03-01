@@ -15,7 +15,7 @@ const predefinedAnswers = [
   },
   {
     keywords: ['invest', 'investor', 'funding'],
-    answer: "Visit our Investors page to explore the growth potential and business model!"
+    answer: "Check our Pricing page to explore the business model and upcoming plans!"
   },
   {
     keywords: ['download', 'app', 'apk'],

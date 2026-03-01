@@ -67,7 +67,7 @@ export default function DownloadSection() {
 
             {/* Download button */}
             <a
-              href="/app-release.apk"
+              href="/app-release.aab"
               download
               className="inline-flex items-center bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-500 hover:to-cyan-500 text-white border-0 px-10 py-7 text-lg rounded-2xl shadow-2xl shadow-violet-500/30 hover:shadow-violet-500/50 transition-all duration-300 hover:scale-105 group"
             >

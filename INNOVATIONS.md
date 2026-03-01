@@ -276,7 +276,7 @@ Page d'Accueil (/):
     ├── LiveVisitorCounter (haut droite)
     └── NewsletterPopup (centre, après 10s)
 
-Page Investisseurs (/investors):
+Page Investisseurs (supprimée):
 ├── Hero + CTA
 ├── Métriques (TAM/SAM/Objectifs)
 ├── Problème → Solution

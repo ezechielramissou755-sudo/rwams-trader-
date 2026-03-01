@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
+import AnimatedBackground from "@/components/AnimatedBackground";
 
 const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 const manrope = Manrope({ subsets: ["latin"], variable: '--font-manrope' });
@@ -21,9 +22,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} ${manrope.variable} font-sans antialiased`}>
-        {children}
+    <html lang="en" translate="no" suppressHydrationWarning>
+      <head>
+        <meta name="google" content="notranslate" />
+      </head>
+      <body
+        className={`${inter.variable} ${manrope.variable} font-sans antialiased`}
+        suppressHydrationWarning
+      >
+        <AnimatedBackground />
+        <div className="relative z-10">{children}</div>
       </body>
     </html>
   );
